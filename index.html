@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>His First Flight - Synonyms and Antonyms Quiz | Shree Vidyalaya</title>
+    <meta name="description" content="10th Standard English Board Exam Practice Quiz for 'His First Flight' by Liam O'Flaherty. 100 Questions on Synonyms & Antonyms.">
+    <meta name="author" content="P.Karuppusamy M.A, B.Ed, M.Phil.">
+    <style>
+        :root {
+            --primary-dark: #0f172a;
+            --primary-blue: #1e3a8a;
+            --sky-blue: #0284c7;
+            --sky-light: #e0f2fe;
+            --ocean-blue: #0369a1;
+            --teal-accent: #0d9488;
+            --gold-accent: #d97706;
+            --gold-light: #fef3c7;
+            --success-green: #16a34a;
+            --success-light: #dcfce7;
+            --danger-red: #dc2626;
+            --danger-light: #fee2e2;
+            --warning-orange: #ea580c;
+            --warning-light: #ffedd5;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --card-bg: rgba(255, 255, 255, 0.96);
+            --glass-border: rgba(255, 255, 255, 0.6);
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.1);
+            --shadow-lg: 0 20px 30px -10px rgba(2, 132, 199, 0.2);
+            --radius-lg: 16px;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 40%, #38bdf8 70%, #bae6fd 100%);
+            background-attachment: fixed;
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Animated background seagulls */
+        .seagull-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.15;
+            overflow: hidden;
+        }
+
+        .seagull {
+            position: absolute;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 30'%3E%3Cpath d='M0,15 Q12.5,0 25,15 Q37.5,0 50,15 Q37.5,10 25,20 Q12.5,10 0,15 Z' fill='%23ffffff'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: fly linear infinite;
+        }
+
+        .g1 { width: 40px; height: 24px; top: 15%; left: -50px; animation-duration: 22s; animation-delay: 0s; }
+        .g2 { width: 30px; height: 18px; top: 35%; left: -50px; animation-duration: 18s; animation-delay: 5s; }
+        .g3 { width: 50px; height: 30px; top: 60%; left: -50px; animation-duration: 28s; animation-delay: 10s; }
+
+        @keyframes fly {
+            0% { transform: translateX(-50px) translateY(0) rotate(0deg); }
+            25% { transform: translateX(30vw) translateY(-20px) rotate(3deg); }
+            50% { transform: translateX(60vw) translateY(10px) rotate(-2deg); }
+            75% { transform: translateX(85vw) translateY(-15px) rotate(2deg); }
+            100% { transform: translateX(105vw) translateY(0) rotate(0deg); }
+        }
+
+        /* App Container */
+        .app-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 16px;
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Card */
+        .school-header-card {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            border-radius: var(--radius-lg);
+            padding: 20px 24px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--glass-border);
+            margin-bottom: 20px;
+        }
+
+        .school-name {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .school-location {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--sky-blue);
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+
+        .quiz-main-title {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            background: linear-gradient(120deg, #1e3a8a, #0284c7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 4px;
+        }
+
+        .quiz-subtitle {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--gold-accent);
+            margin-bottom: 8px;
+        }
+
+        .prepared-by {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            border-top: 1px dashed #cbd5e1;
+            padding-top: 8px;
+            display: inline-block;
+        }
+
+        /* Screen Views */
+        .screen {
+            display: none;
+            width: 100%;
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Glass Panel */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--glass-border);
+            margin-bottom: 20px;
+        }
+
+        .welcome-content {
+            text-align: center;
+        }
+
+        .badges-row {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 16px 0 24px;
+            flex-wrap: wrap;
+        }
+
+        .info-badge {
+            background: var(--sky-light);
+            color: var(--ocean-blue);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border: 1px solid #bae6fd;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, #fef3c7, #fffbeb);
+            border-left: 4px solid var(--gold-accent);
+            padding: 14px 18px;
+            border-radius: var(--radius-md);
+            margin: 16px 0 24px;
+            font-style: italic;
+            color: #78350f;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .student-form {
+            max-width: 480px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+        }
+
+        .form-group label .required {
+            color: var(--danger-red);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: var(--radius-md);
+            border: 2px solid #cbd5e1;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            background: #ffffff;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--sky-blue);
+            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+        }
+
+        .mode-selection {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: var(--radius-md);
+            padding: 14px;
+            margin-bottom: 20px;
+        }
+
+        .mode-options {
+            display: flex;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .mode-option {
+            flex: 1;
+            position: relative;
+        }
+
+        .mode-option input {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .mode-card {
+            border: 2px solid #cbd5e1;
+            border-radius: var(--radius-sm);
+            padding: 10px;
+            text-align: center;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            transition: all 0.2s;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .mode-option input:checked + .mode-card {
+            border-color: var(--sky-blue);
+            background: var(--sky-light);
+            color: var(--ocean-blue);
+        }
+
+        .btn-start {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: var(--radius-md);
+            background: linear-gradient(135deg, #0284c7, #1e3a8a);
+            color: #ffffff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px -5px rgba(2, 132, 199, 0.4);
+            transition: all 0.25s ease;
+        }
+
+        .btn-start:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 24px -5px rgba(2, 132, 199, 0.5);
+            background: linear-gradient(135deg, #0369a1, #1e40af);
+        }
+
+        /* Sticky Quiz Header */
+        .sticky-quiz-header {
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(12px);
+            border-radius: var(--radius-md);
+            padding: 10px 16px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--glass-border);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .student-chip {
+            background: #f1f5f9;
+            color: var(--text-dark);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            max-width: 140px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .section-badge {
+            background: var(--primary-blue);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .header-center {
+            flex: 1;
+            max-width: 300px;
+            min-width: 140px;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 10px;
+            background: #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--sky-blue), var(--teal-accent));
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .progress-text {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .timer-badge {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            border: 1px solid #fde68a;
+        }
+
+        .timer-badge.warning {
+            background: #fee2e2;
+            color: #991b1b;
+            border-color: #fca5a5;
+            animation: pulse 1s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { opacity: 1; }
+            to { opacity: 0.7; }
+        }
+
+        /* Question Box */
+        .question-card {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 16px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .question-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .q-number {
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--sky-blue);
+        }
+
+        .q-mark {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--teal-accent);
+            background: #f0fdf4;
+            padding: 2px 8px;
+            border-radius: 12px;
+            border: 1px solid #bbf7d0;
+        }
+
+        .question-context {
+            font-size: 0.95rem;
+            color: #475569;
+            background: #f8fafc;
+            border-left: 3px solid var(--sky-blue);
+            padding: 10px 14px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin-bottom: 14px;
+            font-style: italic;
+        }
+
+        .question-text {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        /* Options */
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .option-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .option-card:hover {
+            border-color: var(--sky-blue);
+            background: #f0f9ff;
+            transform: translateX(3px);
+        }
+
+        .option-card.selected {
+            border-color: var(--sky-blue);
+            background: var(--sky-light);
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.15);
+        }
+
+        .option-prefix {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #e2e8f0;
+            color: var(--text-muted);
+            font-weight: 800;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .option-card.selected .option-prefix {
+            background: var(--sky-blue);
+            color: #ffffff;
+        }
+
+        .option-label {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            flex: 1;
+        }
+
+        .motivation-banner {
+            background: linear-gradient(135deg, #0284c7, #0d9488);
+            color: #ffffff;
+            padding: 12px 18px;
+            border-radius: var(--radius-md);
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quiz-nav-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn-nav {
+            padding: 12px 24px;
+            border-radius: var(--radius-md);
+            border: none;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-prev {
+            background: #ffffff;
+            color: var(--text-dark);
+            border: 2px solid #cbd5e1;
+        }
+
+        .btn-prev:hover:not(:disabled) {
+            background: #f1f5f9;
+        }
+
+        .btn-next {
+            background: var(--sky-blue);
+            color: #ffffff;
+        }
+
+        .btn-next:hover:not(:disabled) {
+            background: var(--ocean-blue);
+        }
+
+        .btn-submit-main {
+            background: linear-gradient(135deg, #16a34a, #15803d);
+            color: #ffffff;
+        }
+
+        .btn-submit-main:hover:not(:disabled) {
+            background: linear-gradient(135deg, #15803d, #166534);
+        }
+
+        .btn-nav:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        /* Question Palette */
+        .palette-panel {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 18px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e2e8f0;
+        }
+
+        .palette-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .palette-title {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+
+        .palette-legend {
+            display: flex;
+            gap: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .dot-answered { background: var(--success-green); }
+        .dot-unanswered { background: #e2e8f0; border: 1px solid #94a3b8; }
+        .dot-current { background: var(--gold-accent); }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(36px, 1fr));
+            gap: 6px;
+            max-height: 180px;
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+
+        .palette-btn {
+            width: 100%;
+            height: 36px;
+            border-radius: var(--radius-sm);
+            border: 1px solid #cbd5e1;
+            background: #f8fafc;
+            color: var(--text-dark);
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .palette-btn:hover {
+            border-color: var(--sky-blue);
+            transform: scale(1.05);
+        }
+
+        /* Palette Status Requirement: Answered -> Green, Unanswered -> Neutral, Current -> Highlighted */
+        .palette-btn.answered {
+            background: var(--success-green);
+            border-color: var(--success-green);
+            color: #ffffff;
+        }
+
+        .palette-btn.current {
+            border: 3px solid var(--gold-accent);
+            box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.3);
+            font-weight: 800;
+        }
+
+        /* Modals */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-box {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            max-width: 440px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay.active .modal-box {
+            transform: scale(1);
+        }
+
+        .modal-icon {
+            font-size: 3rem;
+            margin-bottom: 12px;
+        }
+
+        .modal-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 8px;
+        }
+
+        .modal-body {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .btn-modal {
+            padding: 10px 20px;
+            border-radius: var(--radius-md);
+            border: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .btn-modal-primary { background: var(--sky-blue); color: white; }
+        .btn-modal-secondary { background: #e2e8f0; color: var(--text-dark); }
+
+        /* Result View */
+        .score-card {
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a, #0284c7);
+            color: white;
+            border-radius: var(--radius-lg);
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .score-number {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1;
+            margin: 10px 0;
+            color: #ffffff;
+        }
+
+        .score-percentage {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #7dd3fc;
+            margin-bottom: 14px;
+        }
+
+        .performance-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #ffffff;
+            max-width: 90%;
+        }
+
+        .results-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: #ffffff;
+            border-radius: var(--radius-md);
+            padding: 16px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-card.correct { border-top: 4px solid var(--success-green); }
+        .stat-card.wrong { border-top: 4px solid var(--danger-red); }
+        .stat-card.unanswered { border-top: 4px solid var(--warning-orange); }
+
+        .stat-val {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .stat-card.correct .stat-val { color: var(--success-green); }
+        .stat-card.wrong .stat-val { color: var(--danger-red); }
+        .stat-card.unanswered .stat-val { color: var(--warning-orange); }
+
+        .stat-lbl {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        /* CSS Donut Chart */
+        .chart-section {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            margin-bottom: 24px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+
+        .chart-title {
+            font-size: 1rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .donut-chart-container {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 16px;
+        }
+
+        .donut-chart {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(
+                var(--success-green) 0deg calc(var(--correct-deg, 0deg)),
+                var(--danger-red) calc(var(--correct-deg, 0deg)) calc(var(--correct-deg, 0deg) + var(--wrong-deg, 0deg)),
+                var(--warning-orange) calc(var(--correct-deg, 0deg) + var(--wrong-deg, 0deg)) 360deg
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donut-center {
+            width: 110px;
+            height: 110px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donut-center-val {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+        }
+
+        .result-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-result {
+            padding: 14px 24px;
+            border-radius: var(--radius-md);
+            border: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-review { background: var(--sky-blue); color: white; }
+        .btn-retry { background: var(--gold-accent); color: white; }
+        .btn-print { background: var(--primary-blue); color: white; }
+
+        /* Answer Review List */
+        .review-panel {
+            margin-top: 20px;
+        }
+
+        .review-item {
+            background: #ffffff;
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            border-left: 5px solid #cbd5e1;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .review-item.is-correct { border-left-color: var(--success-green); background: #f0fdf4; }
+        .review-item.is-wrong { border-left-color: var(--danger-red); background: #fef2f2; }
+        .review-item.is-unanswered { border-left-color: var(--warning-orange); background: #fff7ed; }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 800;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+
+        .review-q-text {
+            font-weight: 700;
+            font-size: 0.98rem;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .review-context {
+            font-size: 0.88rem;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .review-answers-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 0.88rem;
+        }
+
+        .review-ans-box {
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+        }
+
+        .review-ans-box.user-wrong {
+            background: #fee2e2;
+            color: #991b1b;
+            border-color: #fca5a5;
+            font-weight: 700;
+        }
+
+        .review-ans-box.correct-ans {
+            background: #dcfce7;
+            color: #166534;
+            border-color: #86efac;
+            font-weight: 700;
+        }
+
+        /* Print Media Stylesheet */
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+
+            .seagull-bg, .sticky-quiz-header, .quiz-nav-row, .palette-panel, .result-actions, .mode-selection, .btn-start {
+                display: none !important;
+            }
+
+            .app-container {
+                max-width: 100% !important;
+                padding: 0 !important;
+            }
+
+            .glass-panel, .school-header-card, .score-card, .stat-card, .chart-section {
+                box-shadow: none !important;
+                border: 1px solid #ccc !important;
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+
+            .quiz-main-title, .score-number {
+                color: #000000 !important;
+                -webkit-text-fill-color: #000000 !important;
+            }
+
+            .score-card {
+                background: #f8fafc !important;
+                color: #000000 !important;
+            }
+
+            .score-percentage, .performance-badge {
+                color: #000000 !important;
+                border: 1px solid #000 !important;
+            }
+
+            .print-teacher-sig {
+                display: block !important;
+                margin-top: 40px;
+                text-align: right;
+                font-weight: 700;
+                font-size: 0.95rem;
+            }
+        }
+
+        .print-teacher-sig {
+            display: none;
+        }
+
+        /* Mobile Breakpoints */
+        @media (max-width: 640px) {
+            .app-container { padding: 10px; }
+            .school-header-card { padding: 14px 12px; }
+            .school-name { font-size: 1.1rem; }
+            .school-location { font-size: 0.8rem; }
+            .quiz-main-title { font-size: 1.25rem; }
+            .quiz-subtitle { font-size: 0.85rem; }
+            .glass-panel { padding: 16px; }
+            .question-card { padding: 16px; }
+            .question-text { font-size: 1rem; }
+            .option-card { padding: 12px; gap: 10px; }
+            .option-label { font-size: 0.9rem; }
+            .sticky-quiz-header { padding: 8px 12px; }
+            .student-chip { max-width: 100px; font-size: 0.75rem; }
+            .review-answers-grid { grid-template-columns: 1fr; }
+            .score-number { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Seagull Flying Elements -->
+    <div class="seagull-bg">
+        <div class="seagull g1"></div>
+        <div class="seagull g2"></div>
+        <div class="seagull g3"></div>
+    </div>
+
+    <div class="app-container">
+
+        <!-- Prominent School Header Card -->
+        <header class="school-header-card">
+            <div class="school-name">SHREE VIDYALAYA MATRIC HIGHER SECONDARY SCHOOL, GOBICHETTIPALAYAM.</div>
+            <h1 class="quiz-main-title">HIS FIRST FLIGHT<br>SYNONYMS AND ANTONYMS QUIZ</h1>
+            <div class="quiz-subtitle">10th Standard English – Board Exam Practice</div>
+            <div class="prepared-by">Prepared by: <strong>P.Karuppusamy M.A, B.Ed, M.Phil.</strong></div>
+        </header>
+
+        <!-- SCREEN 1: WELCOME / START PAGE -->
+        <section id="welcome-screen" class="screen active">
+            <div class="glass-panel welcome-content">
+                <div class="badges-row">
+                    <span class="info-badge">📋 100 Questions</span>
+                    <span class="info-badge">💯 100 Marks</span>
+                    <span class="info-badge">🎯 Section A: Synonyms (1-50)</span>
+                    <span class="info-badge">⚡ Section B: Antonyms (51-100)</span>
+                </div>
+
+                <div class="quote-box">
+                    “Success begins with the courage to try.”
+                </div>
+
+                <form id="student-form" class="student-form" onsubmit="handleStartQuiz(event)">
+                    <div class="form-group">
+                        <label for="student-name">Student Name <span class="required">*</span></label>
+                        <input type="text" id="student-name" class="form-control" placeholder="Enter student full name" required autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-class">Class / Section</label>
+                        <input type="text" id="student-class" class="form-control" value="10th Standard" placeholder="e.g. 10th A" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-roll">Roll Number <span style="font-weight: normal; color: var(--text-muted);">(Optional)</span></label>
+                        <input type="text" id="student-roll" class="form-control" placeholder="e.g. 10104" autocomplete="off">
+                    </div>
+
+                    <div class="mode-selection">
+                        <label style="display: block; font-weight: 700; font-size: 0.88rem; margin-bottom: 6px;">Select Practice Mode:</label>
+                        <div class="mode-options">
+                            <label class="mode-option">
+                                <input type="radio" name="quiz-mode" value="untimed" checked>
+                                <div class="mode-card">
+                                    📖 Practice Without Timer
+                                </div>
+                            </label>
+                            <label class="mode-option">
+                                <input type="radio" name="quiz-mode" value="timed">
+                                <div class="mode-card">
+                                    ⏱️ Timed Practice (60 Mins)
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-start">START QUIZ</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- SCREEN 2: QUIZ PAGE -->
+        <section id="quiz-screen" class="screen">
+            <!-- Compact Sticky Header -->
+            <div class="sticky-quiz-header">
+                <div class="header-left">
+                    <span id="display-student-chip" class="student-chip">Student</span>
+                    <span id="display-section-badge" class="section-badge">SECTION A – SYNONYMS</span>
+                </div>
+                <div class="header-center">
+                    <div class="progress-bar-container">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <div id="progress-text" class="progress-text">Question 1 of 100 (1%)</div>
+                </div>
+                <div class="header-right">
+                    <div id="timer-display" class="timer-badge" style="display: none;">
+                        ⏱️ TIME LEFT: <span id="timer-count">59:59</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Motivational Banner -->
+            <div id="motivation-banner" class="motivation-banner" style="display: none;">
+                <span>🌟</span>
+                <span id="motivation-text">“Believe you can, and you are halfway there.”</span>
+            </div>
+
+            <!-- Question Card -->
+            <div class="question-card">
+                <div class="question-meta">
+                    <span id="q-num-label" class="q-number">Question 1 of 100</span>
+                    <span class="q-mark">1 Mark</span>
+                </div>
+
+                <div id="q-context" class="question-context">
+                    "Context sentence will appear here"
+                </div>
+
+                <div id="q-text" class="question-text">
+                    Choose the appropriate synonym of "muster".
+                </div>
+
+                <div id="options-container" class="options-grid">
+                    <!-- Option cards -->
+                </div>
+            </div>
+
+            <!-- Quiz Navigation -->
+            <div class="quiz-nav-row">
+                <button id="btn-prev" class="btn-nav btn-prev" onclick="goToPrevQuestion()">
+                    ⬅️ Previous
+                </button>
+                <button id="btn-next" class="btn-nav btn-next" onclick="goToNextQuestion()">
+                    Next ➡️
+                </button>
+                <button id="btn-submit" class="btn-nav btn-submit-main" style="display: none;" onclick="promptSubmission()">
+                    🏁 SUBMIT QUIZ
+                </button>
+            </div>
+
+            <!-- Question Palette -->
+            <div class="palette-panel">
+                <div class="palette-header">
+                    <div class="palette-title">Question Palette</div>
+                    <div class="palette-legend">
+                        <div class="legend-item"><span class="legend-dot dot-answered"></span> Answered</div>
+                        <div class="legend-item"><span class="legend-dot dot-unanswered"></span> Unanswered</div>
+                        <div class="legend-item"><span class="legend-dot dot-current"></span> Current</div>
+                    </div>
+                </div>
+                <div id="palette-grid" class="palette-grid">
+                    <!-- Buttons 1-100 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 3: RESULT PAGE -->
+        <section id="result-screen" class="screen">
+            <div class="score-card">
+                <h2>QUIZ RESULT</h2>
+                <div style="font-size: 1.1rem; font-weight: 700; opacity: 0.9;">YOUR SCORE</div>
+                <div id="res-score-num" class="score-number">0 / 100</div>
+                <div id="res-score-pct" class="score-percentage">Percentage: 0%</div>
+                <div id="res-performance-msg" class="performance-badge">
+                    Evaluating performance...
+                </div>
+            </div>
+
+            <div class="glass-panel">
+                <h3 style="margin-bottom: 14px; color: var(--primary-blue); font-weight: 800;">Student Details</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 20px; font-size: 0.95rem;">
+                    <div><strong>Student Name:</strong> <span id="res-student-name">-</span></div>
+                    <div><strong>Class / Section:</strong> <span id="res-student-class">-</span></div>
+                    <div><strong>Roll Number:</strong> <span id="res-student-roll">-</span></div>
+                    <div><strong>Total Questions:</strong> 100</div>
+                </div>
+
+                <div class="results-summary-grid">
+                    <div class="stat-card correct">
+                        <div id="stat-correct-val" class="stat-val">0</div>
+                        <div class="stat-lbl">Correct Answers</div>
+                    </div>
+                    <div class="stat-card wrong">
+                        <div id="stat-wrong-val" class="stat-val">0</div>
+                        <div class="stat-lbl">Wrong Answers</div>
+                    </div>
+                    <div class="stat-card unanswered">
+                        <div id="stat-unanswered-val" class="stat-val">0</div>
+                        <div class="stat-lbl">Unanswered Questions</div>
+                    </div>
+                </div>
+
+                <!-- Pure CSS Performance Chart -->
+                <div class="chart-section">
+                    <div class="chart-title">Visual Performance Breakdown</div>
+                    <div class="donut-chart-container">
+                        <div id="donut-chart" class="donut-chart">
+                            <div class="donut-center">
+                                <div id="donut-pct-text" class="donut-center-val">0%</div>
+                                <div style="font-size: 0.7rem; font-weight: 700; color: var(--text-muted);">ACCURACY</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 16px; font-size: 0.8rem; font-weight: 700;">
+                        <span style="color: var(--success-green);">■ Correct</span>
+                        <span style="color: var(--danger-red);">■ Wrong</span>
+                        <span style="color: var(--warning-orange);">■ Unanswered</span>
+                    </div>
+                </div>
+
+                <div class="result-actions">
+                    <button class="btn-result btn-review" onclick="toggleAnswerReview()">🔍 REVIEW ANSWERS</button>
+                    <button class="btn-result btn-retry" onclick="resetQuiz()">🔄 TRY AGAIN</button>
+                    <button class="btn-result btn-print" onclick="window.print()">🖨️ PRINT RESULT</button>
+                </div>
+
+                <div class="print-teacher-sig">
+                    <p>Teacher Signature: _______________________</p>
+                    <p style="font-size: 0.8rem; color: #555; margin-top: 4px;">P.Karuppusamy M.A, B.Ed, M.Phil.</p>
+                </div>
+            </div>
+
+            <!-- Answer Review -->
+            <div id="review-panel" class="review-panel" style="display: none;">
+                <div class="glass-panel">
+                    <h3 style="margin-bottom: 16px; color: var(--primary-blue); font-weight: 800;">Answer Review</h3>
+                    <div id="review-items-container">
+                        <!-- Items rendered dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="margin-top: auto; padding: 20px 10px 10px; text-align: center; font-size: 0.82rem; color: #ffffff; text-shadow: 0 1px 3px rgba(0,0,0,0.4);">
+            <p style="font-weight: 700; margin-bottom: 2px;">Shree Vidyalaya Matric Higher Secondary School, Gobichettipalayam.</p>
+            <p>Prepared by P.Karuppusamy M.A, B.Ed, M.Phil.</p>
+            <p style="font-style: italic; color: #fef3c7; margin-top: 4px; font-weight: 600;">“Learn Today • Lead Tomorrow”</p>
+        </footer>
+
+    </div>
+
+    <!-- Modal Dialog -->
+    <div id="quiz-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div id="modal-icon" class="modal-icon">🔔</div>
+            <h3 id="modal-title" class="modal-title">Notice</h3>
+            <div id="modal-body" class="modal-body">Modal content.</div>
+            <div id="modal-actions" class="modal-actions">
+                <button id="modal-btn-sec" class="btn-modal btn-modal-secondary" onclick="closeModal()">Cancel</button>
+                <button id="modal-btn-pri" class="btn-modal btn-modal-primary" onclick="closeModal()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // FULL 100 QUESTION DATASET
+        const rawQuestions = [
+  {
+    "id": 1,
+    "section": "Synonym",
+    "word": "muster",
+    "question": "Choose the appropriate synonym of 'muster'.",
+    "context": "He failed to muster up courage to take that plunge.",
+    "options": ["Gather", "Scatter", "Destroy", "Refuse"],
+    "answer": "Gather"
+  },
+  {
+    "id": 2,
+    "section": "Synonym",
+    "word": "brink",
+    "question": "Choose the appropriate synonym of 'brink'.",
+    "context": "He had walked to the very brink of the ledge.",
+    "options": ["Edge", "Center", "Bottom", "Middle"],
+    "answer": "Edge"
+  },
+  {
+    "id": 3,
+    "section": "Synonym",
+    "word": "expanse",
+    "question": "Choose the appropriate synonym of 'expanse'.",
+    "context": "A vast expanse of sea stretched down beneath.",
+    "options": ["Wide stretch", "Narrow gap", "Small hole", "Short boundary"],
+    "answer": "Wide stretch"
+  },
+  {
+    "id": 4,
+    "section": "Synonym",
+    "word": "plunge",
+    "question": "Choose the appropriate synonym of 'plunge'.",
+    "context": "He lacked the courage to take that desperate plunge.",
+    "options": ["Dive", "Retreat", "Ascend", "Crawl"],
+    "answer": "Dive"
+  },
+  {
+    "id": 5,
+    "section": "Synonym",
+    "word": "shrilly",
+    "question": "Choose the appropriate synonym of 'shrilly'.",
+    "context": "His parents flew around calling to him shrilly.",
+    "options": ["Piercingly", "Softly", "Silently", "Calmly"],
+    "answer": "Piercingly"
+  },
+  {
+    "id": 6,
+    "section": "Synonym",
+    "word": "scolding",
+    "question": "Choose the appropriate synonym of 'scolding'.",
+    "context": "They were scolding him and threatening to let him starve.",
+    "options": ["Chiding", "Praising", "Comforting", "Encouraging"],
+    "answer": "Chiding"
+  },
+  {
+    "id": 7,
+    "section": "Synonym",
+    "word": "threatening",
+    "question": "Choose the appropriate synonym of 'threatening'.",
+    "context": "They were threatening to let him starve on his ledge.",
+    "options": ["Menacing", "Helping", "Promising", "Supporting"],
+    "answer": "Menacing"
+  },
+  {
+    "id": 8,
+    "section": "Synonym",
+    "word": "starve",
+    "question": "Choose the appropriate synonym of 'starve'.",
+    "context": "Unless he flew away, he would starve on his ledge.",
+    "options": ["Suffer hunger", "Overeat", "Feast", "Sleep"],
+    "answer": "Suffer hunger"
+  },
+  {
+    "id": 9,
+    "section": "Synonym",
+    "word": "perfecting",
+    "question": "Choose the appropriate synonym of 'perfecting'.",
+    "context": "His parents were perfecting his brothers in the art of flight.",
+    "options": ["Refining", "Ruining", "Stopping", "Ignoring"],
+    "answer": "Refining"
+  },
+  {
+    "id": 10,
+    "section": "Synonym",
+    "word": "skim",
+    "question": "Choose the appropriate synonym of 'skim'.",
+    "context": "They taught him how to skim the waves.",
+    "options": ["Glide lightly", "Sink deeply", "Dive heavily", "Crash into"],
+    "answer": "Glide lightly"
+  },
+  {
+    "id": 11,
+    "section": "Synonym",
+    "word": "devour",
+    "question": "Choose the appropriate synonym of 'devour'.",
+    "context": "He saw his older brother catch his first herring and devour it.",
+    "options": ["Eat greedily", "Throw away", "Store carefully", "Cook slowly"],
+    "answer": "Eat greedily"
+  },
+  {
+    "id": 12,
+    "section": "Synonym",
+    "word": "cowardice",
+    "question": "Choose the appropriate synonym of 'cowardice'.",
+    "context": "His family walked about taunting him with his cowardice.",
+    "options": ["Timidity", "Bravery", "Valour", "Confidence"],
+    "answer": "Timidity"
+  },
+  {
+    "id": 13,
+    "section": "Synonym",
+    "word": "ascending",
+    "question": "Choose the appropriate synonym of 'ascending'.",
+    "context": "The sun was now ascending the sky.",
+    "options": ["Rising", "Falling", "Setting", "Sinking"],
+    "answer": "Rising"
+  },
+  {
+    "id": 14,
+    "section": "Synonym",
+    "word": "blazing",
+    "question": "Choose the appropriate synonym of 'blazing'.",
+    "context": "The sun was blazing on his ledge that faced the south.",
+    "options": ["Shining intensely", "Dimming", "Freezing", "Darkening"],
+    "answer": "Shining intensely"
+  },
+  {
+    "id": 15,
+    "section": "Synonym",
+    "word": "scrap",
+    "question": "Choose the appropriate synonym of 'scrap'.",
+    "context": "He could not find a single scrap of food.",
+    "options": ["Piece", "Whole", "Amount", "Quantity"],
+    "answer": "Piece"
+  },
+  {
+    "id": 16,
+    "section": "Synonym",
+    "word": "rough",
+    "question": "Choose the appropriate synonym of 'rough'.",
+    "context": "He searched among the rough, dirt-caked straw nest.",
+    "options": ["Uneven", "Smooth", "Polished", "Soft"],
+    "answer": "Uneven"
+  },
+  {
+    "id": 17,
+    "section": "Synonym",
+    "word": "gnawed",
+    "question": "Choose the appropriate synonym of 'gnawed'.",
+    "context": "He had even gnawed at the dried pieces of eggshell.",
+    "options": ["Chewed", "Swallowed", "Licked", "Dropped"],
+    "answer": "Chewed"
+  },
+  {
+    "id": 18,
+    "section": "Synonym",
+    "word": "trotted",
+    "question": "Choose the appropriate synonym of 'trotted'.",
+    "context": "He trotted back and forth from one end of the ledge to the other.",
+    "options": ["Jogged", "Flew", "Dived", "Rested"],
+    "answer": "Jogged"
+  },
+  {
+    "id": 19,
+    "section": "Synonym",
+    "word": "daintily",
+    "question": "Choose the appropriate synonym of 'daintily'.",
+    "context": "He stepped daintily out to the brink of the ledge.",
+    "options": ["Elegantly", "Roughly", "Clumsily", "Heavily"],
+    "answer": "Elegantly"
+  },
+  {
+    "id": 20,
+    "section": "Synonym",
+    "word": "sheer",
+    "question": "Choose the appropriate synonym of 'sheer'.",
+    "context": "Between him and his parents there was a sheer gulf.",
+    "options": ["Steep", "Shallow", "Gradual", "Slanted"],
+    "answer": "Steep"
+  },
+  {
+    "id": 21,
+    "section": "Synonym",
+    "word": "precipice",
+    "question": "Choose the appropriate synonym of 'precipice'.",
+    "context": "The cliff ended in a sheer precipice over the sea.",
+    "options": ["Steep cliff", "Flat plain", "Deep tunnel", "Low valley"],
+    "answer": "Steep cliff"
+  },
+  {
+    "id": 22,
+    "section": "Synonym",
+    "word": "pretended",
+    "question": "Choose the appropriate synonym of 'pretended'.",
+    "context": "He pretended to be falling asleep to attract attention.",
+    "options": ["Feigned", "Proved", "Revealed", "Realized"],
+    "answer": "Feigned"
+  },
+  {
+    "id": 23,
+    "section": "Synonym",
+    "word": "dozing",
+    "question": "Choose the appropriate synonym of 'dozing'.",
+    "context": "His brothers were lying on the plateau dozing.",
+    "options": ["Napping", "Running", "Hunting", "Shouting"],
+    "answer": "Napping"
+  },
+  {
+    "id": 24,
+    "section": "Synonym",
+    "word": "preening",
+    "question": "Choose the appropriate synonym of 'preening'.",
+    "context": "His father was preening the feathers on his white back.",
+    "options": ["Grooming", "Dirtying", "Plucking", "Damaging"],
+    "answer": "Grooming"
+  },
+  {
+    "id": 25,
+    "section": "Synonym",
+    "word": "maddened",
+    "question": "Choose the appropriate synonym of 'maddened'.",
+    "context": "The sight of the food maddened him.",
+    "options": ["Enraged", "Calmed", "Pleased", "Comforted"],
+    "answer": "Enraged"
+  },
+  {
+    "id": 26,
+    "section": "Synonym",
+    "word": "whet",
+    "question": "Choose the appropriate synonym of 'whet'.",
+    "context": "He loved to tear food and whet his beak now and then.",
+    "options": ["Sharpen", "Blunt", "Clean", "Break"],
+    "answer": "Sharpen"
+  },
+  {
+    "id": 27,
+    "section": "Synonym",
+    "word": "uttered",
+    "question": "Choose the appropriate synonym of 'uttered'.",
+    "context": "He uttered a low cackle when he saw his mother.",
+    "options": ["Voiced", "Concealed", "Silenced", "Suppressed"],
+    "answer": "Voiced"
+  },
+  {
+    "id": 28,
+    "section": "Synonym",
+    "word": "begging",
+    "question": "Choose the appropriate synonym of 'begging'.",
+    "context": "He kept begging her to bring him some food.",
+    "options": ["Pleading", "Ordering", "Refusing", "Giving"],
+    "answer": "Pleading"
+  },
+  {
+    "id": 29,
+    "section": "Synonym",
+    "word": "mockingly",
+    "question": "Choose the appropriate synonym of 'mockingly'.",
+    "context": "She screamed back mockingly at his desperate cries.",
+    "options": ["Derisively", "Respectfully", "Kindly", "Humbly"],
+    "answer": "Derisively"
+  },
+  {
+    "id": 30,
+    "section": "Synonym",
+    "word": "plaintively",
+    "question": "Choose the appropriate synonym of 'plaintively'.",
+    "context": "He kept calling plaintively for food.",
+    "options": ["Mournfully", "Joyfully", "Loudly", "Cheerfully"],
+    "answer": "Mournfully"
+  },
+  {
+    "id": 31,
+    "section": "Synonym",
+    "word": "joyful",
+    "question": "Choose the appropriate synonym of 'joyful'.",
+    "context": "He uttered a joyful scream when his mother flew near.",
+    "options": ["Delighted", "Sorrowful", "Painful", "Terrified"],
+    "answer": "Delighted"
+  },
+  {
+    "id": 32,
+    "section": "Synonym",
+    "word": "eagerly",
+    "question": "Choose the appropriate synonym of 'eagerly'.",
+    "context": "He leaned out eagerly towards the piece of fish.",
+    "options": ["Enthusiastically", "Reluctantly", "Lazily", "Indifferently"],
+    "answer": "Enthusiastically"
+  },
+  {
+    "id": 33,
+    "section": "Synonym",
+    "word": "halted",
+    "question": "Choose the appropriate synonym of 'halted'.",
+    "context": "She halted just opposite to him in mid-air.",
+    "options": ["Stopped", "Continued", "Advanced", "Proceeded"],
+    "answer": "Stopped"
+  },
+  {
+    "id": 34,
+    "section": "Synonym",
+    "word": "limp",
+    "question": "Choose the appropriate synonym of 'limp'.",
+    "context": "Her wings hung limp as she hovered motionless.",
+    "options": ["Flexible", "Rigid", "Stiff", "Strong"],
+    "answer": "Flexible"
+  },
+  {
+    "id": 35,
+    "section": "Synonym",
+    "word": "motionless",
+    "question": "Choose the appropriate synonym of 'motionless'.",
+    "context": "She hung motionless in the air right before him.",
+    "options": ["Still", "Moving", "Active", "Dancing"],
+    "answer": "Still"
+  },
+  {
+    "id": 36,
+    "section": "Synonym",
+    "word": "surprise",
+    "question": "Choose the appropriate synonym of 'surprise'.",
+    "context": "He waited a moment in surprise at her inaction.",
+    "options": ["Astonishment", "Expectation", "Calmness", "Boredom"],
+    "answer": "Astonishment"
+  },
+  {
+    "id": 37,
+    "section": "Synonym",
+    "word": "dive",
+    "question": "Choose the appropriate synonym of 'dive'.",
+    "context": "Maddened by hunger, he made a dive at the fish.",
+    "options": ["Plunge", "Climb", "Ascent", "Leap upward"],
+    "answer": "Plunge"
+  },
+  {
+    "id": 38,
+    "section": "Synonym",
+    "word": "swooped",
+    "question": "Choose the appropriate synonym of 'swooped'.",
+    "context": "His mother swooped upwards past him.",
+    "options": ["Flew down swiftly", "Crawled slowly", "Walked steadily", "Landed quietly"],
+    "answer": "Flew down swiftly"
+  },
+  {
+    "id": 39,
+    "section": "Synonym",
+    "word": "monstrous",
+    "question": "Choose the appropriate synonym of 'monstrous'.",
+    "context": "A monstrous terror seized him as he fell.",
+    "options": ["Gigantic", "Tiny", "Small", "Delicate"],
+    "answer": "Gigantic"
+  },
+  {
+    "id": 40,
+    "section": "Synonym",
+    "word": "terror",
+    "question": "Choose the appropriate synonym of 'terror'.",
+    "context": "A monstrous terror seized him and his heart stood still.",
+    "options": ["Dread", "Peace", "Joy", "Comfort"],
+    "answer": "Dread"
+  },
+  {
+    "id": 41,
+    "section": "Synonym",
+    "word": "seized",
+    "question": "Choose the appropriate synonym of 'seized'.",
+    "context": "Fear seized him completely for a minute.",
+    "options": ["Gripped", "Released", "Unloosed", "Dropped"],
+    "answer": "Gripped"
+  },
+  {
+    "id": 42,
+    "section": "Synonym",
+    "word": "soaring",
+    "question": "Choose the appropriate synonym of 'soaring'.",
+    "context": "He was no longer falling headlong, but soaring upwards.",
+    "options": ["Flying high", "Sinking down", "Falling fast", "Dropping heavy"],
+    "answer": "Flying high"
+  },
+  {
+    "id": 43,
+    "section": "Synonym",
+    "word": "gradually",
+    "question": "Choose the appropriate synonym of 'gradually'.",
+    "context": "He gradually realized that he was flying.",
+    "options": ["Progressively", "Suddenly", "Instantly", "Abruptly"],
+    "answer": "Progressively"
+  },
+  {
+    "id": 44,
+    "section": "Synonym",
+    "word": "delightful",
+    "question": "Choose the appropriate synonym of 'delightful'.",
+    "context": "Flying felt like a delightful sensation to him.",
+    "options": ["Charming", "Horrible", "Painful", "Dull"],
+    "answer": "Charming"
+  },
+  {
+    "id": 45,
+    "section": "Synonym",
+    "word": "commenced",
+    "question": "Choose the appropriate synonym of 'commenced'.",
+    "context": "He commenced to dive and soar with a joyous cry.",
+    "options": ["Began", "Finished", "Stopped", "Ended"],
+    "answer": "Began"
+  },
+  {
+    "id": 46,
+    "section": "Synonym",
+    "word": "vast",
+    "question": "Choose the appropriate synonym of 'vast'.",
+    "context": "He saw a vast green sea beneath him.",
+    "options": ["Immense", "Tiny", "Narrow", "Limited"],
+    "answer": "Immense"
+  },
+  {
+    "id": 47,
+    "section": "Synonym",
+    "word": "amusedly",
+    "question": "Choose the appropriate synonym of 'amusedly'.",
+    "context": "His parents looked at his efforts amusedly.",
+    "options": ["Humorously", "Angrily", "Sadly", "Sternly"],
+    "answer": "Humorously"
+  },
+  {
+    "id": 48,
+    "section": "Synonym",
+    "word": "beckoning",
+    "question": "Choose the appropriate synonym of 'beckoning'.",
+    "context": "They were beckoning to him, calling shrilly.",
+    "options": ["Signaling", "Dismissing", "Ignoring", "Rejecting"],
+    "answer": "Signaling"
+  },
+  {
+    "id": 49,
+    "section": "Synonym",
+    "word": "fright",
+    "question": "Choose the appropriate synonym of 'fright'.",
+    "context": "He completely forgot that he had ever been in a fright.",
+    "options": ["Fear", "Calmness", "Bravery", "Delight"],
+    "answer": "Fear"
+  },
+  {
+    "id": 50,
+    "section": "Synonym",
+    "word": "exhausted",
+    "question": "Choose the appropriate synonym of 'exhausted'.",
+    "context": "He was weak and exhausted with hunger.",
+    "options": ["Fatigued", "Energetic", "Refreshed", "Lively"],
+    "answer": "Fatigued"
+  },
+  {
+    "id": 51,
+    "section": "Antonym",
+    "word": "afraid",
+    "question": "Choose the appropriate antonym of 'afraid'.",
+    "context": "The young seagull was afraid to fly.",
+    "options": ["Brave", "Timid", "Scared", "Nervous"],
+    "answer": "Brave"
+  },
+  {
+    "id": 52,
+    "section": "Antonym",
+    "word": "muster",
+    "question": "Choose the appropriate antonym of 'muster'.",
+    "context": "He failed to muster up enough courage.",
+    "options": ["Scatter", "Gather", "Collect", "Assemble"],
+    "answer": "Scatter"
+  },
+  {
+    "id": 53,
+    "section": "Antonym",
+    "word": "courage",
+    "question": "Choose the appropriate antonym of 'courage'.",
+    "context": "He took the plunge when he found his courage.",
+    "options": ["Cowardice", "Valour", "Bravery", "Heroism"],
+    "answer": "Cowardice"
+  },
+  {
+    "id": 54,
+    "section": "Antonym",
+    "word": "desperate",
+    "question": "Choose the appropriate antonym of 'desperate'.",
+    "context": "He made a desperate attempt to fly.",
+    "options": ["Hopeful", "Hopeless", "Frantic", "Wild"],
+    "answer": "Hopeful"
+  },
+  {
+    "id": 55,
+    "section": "Antonym",
+    "word": "ascending",
+    "question": "Choose the appropriate antonym of 'ascending'.",
+    "context": "The sun was ascending the sky higher.",
+    "options": ["Descending", "Rising", "Climbing", "Soaring"],
+    "answer": "Descending"
+  },
+  {
+    "id": 56,
+    "section": "Antonym",
+    "word": "blazing",
+    "question": "Choose the appropriate antonym of 'blazing'.",
+    "context": "The sun was blazing intensely over the ledge.",
+    "options": ["Dim", "Bright", "Glowing", "Shining"],
+    "answer": "Dim"
+  },
+  {
+    "id": 57,
+    "section": "Antonym",
+    "word": "rough",
+    "question": "Choose the appropriate antonym of 'rough'.",
+    "context": "He stepped over the rough surface of the nest.",
+    "options": ["Smooth", "Coarse", "Harsh", "Uneven"],
+    "answer": "Smooth"
+  },
+  {
+    "id": 58,
+    "section": "Antonym",
+    "word": "daintily",
+    "question": "Choose the appropriate antonym of 'daintily'.",
+    "context": "He stepped daintily to the brink of the cliff.",
+    "options": ["Clumsily", "Elegantly", "Gracefully", "Delicately"],
+    "answer": "Clumsily"
+  },
+  {
+    "id": 59,
+    "section": "Antonym",
+    "word": "sheer",
+    "question": "Choose the appropriate antonym of 'sheer'.",
+    "context": "The cliff rose in a sheer vertical wall.",
+    "options": ["Gradual", "Steep", "Abrupt", "Vertical"],
+    "answer": "Gradual"
+  },
+  {
+    "id": 60,
+    "section": "Antonym",
+    "word": "pretended",
+    "question": "Choose the appropriate antonym of 'pretended'.",
+    "context": "He pretended to sleep on the ledge.",
+    "options": ["Acted genuinely", "Feigned", "Simulated", "Faked"],
+    "answer": "Acted genuinely"
+  },
+  {
+    "id": 61,
+    "section": "Antonym",
+    "word": "dozing",
+    "question": "Choose the appropriate antonym of 'dozing'.",
+    "context": "His brothers were dozing in the warm afternoon sun.",
+    "options": ["Awake", "Sleeping", "Napping", "Slumbering"],
+    "answer": "Awake"
+  },
+  {
+    "id": 62,
+    "section": "Antonym",
+    "word": "maddened",
+    "question": "Choose the appropriate antonym of 'maddened'.",
+    "context": "The smell of fresh fish maddened him.",
+    "options": ["Calmed", "Enraged", "Infuriated", "Agitated"],
+    "answer": "Calmed"
+  },
+  {
+    "id": 63,
+    "section": "Antonym",
+    "word": "whet",
+    "question": "Choose the appropriate antonym of 'whet'.",
+    "context": "He scraped his beak to whet its sharp edge.",
+    "options": ["Blunt", "Sharpen", "Hone", "Point"],
+    "answer": "Blunt"
+  },
+  {
+    "id": 64,
+    "section": "Antonym",
+    "word": "plaintively",
+    "question": "Choose the appropriate antonym of 'plaintively'.",
+    "context": "He cried out plaintively for his mother.",
+    "options": ["Joyfully", "Mournfully", "Sadly", "Sorrowfully"],
+    "answer": "Joyfully"
+  },
+  {
+    "id": 65,
+    "section": "Antonym",
+    "word": "joyful",
+    "question": "Choose the appropriate antonym of 'joyful'.",
+    "context": "He gave a joyful scream when he took flight.",
+    "options": ["Miserable", "Happy", "Glad", "Cheerful"],
+    "answer": "Miserable"
+  },
+  {
+    "id": 66,
+    "section": "Antonym",
+    "word": "eagerly",
+    "question": "Choose the appropriate antonym of 'eagerly'.",
+    "context": "He leaned forward eagerly towards the food.",
+    "options": ["Reluctantly", "Keenly", "Readily", "Enthusiastically"],
+    "answer": "Reluctantly"
+  },
+  {
+    "id": 67,
+    "section": "Antonym",
+    "word": "halted",
+    "question": "Choose the appropriate antonym of 'halted'.",
+    "context": "She halted near the edge of his reach.",
+    "options": ["Continued", "Stopped", "Paused", "Stayed"],
+    "answer": "Continued"
+  },
+  {
+    "id": 68,
+    "section": "Antonym",
+    "word": "motionless",
+    "question": "Choose the appropriate antonym of 'motionless'.",
+    "context": "His mother hovered motionless in mid-air.",
+    "options": ["Active", "Still", "Stationary", "Fixed"],
+    "answer": "Active"
+  },
+  {
+    "id": 69,
+    "section": "Antonym",
+    "word": "monstrous",
+    "question": "Choose the appropriate antonym of 'monstrous'.",
+    "context": "A monstrous fear grabbed his heart.",
+    "options": ["Tiny", "Gigantic", "Huge", "Enormous"],
+    "answer": "Tiny"
+  },
+  {
+    "id": 70,
+    "section": "Antonym",
+    "word": "terror",
+    "question": "Choose the appropriate antonym of 'terror'.",
+    "context": "The terror inside him quickly passed away.",
+    "options": ["Calmness", "Dread", "Panic", "Horror"],
+    "answer": "Calmness"
+  },
+  {
+    "id": 71,
+    "section": "Antonym",
+    "word": "seized",
+    "question": "Choose the appropriate antonym of 'seized'.",
+    "context": "Fear seized him as he dropped off the cliff.",
+    "options": ["Released", "Grabbed", "Captured", "Clutched"],
+    "answer": "Released"
+  },
+  {
+    "id": 72,
+    "section": "Antonym",
+    "word": "soaring",
+    "question": "Choose the appropriate antonym of 'soaring'.",
+    "context": "He was soaring upwards into the sky.",
+    "options": ["Plummeting", "Rising", "Ascending", "Gliding"],
+    "answer": "Plummeting"
+  },
+  {
+    "id": 73,
+    "section": "Antonym",
+    "word": "gradually",
+    "question": "Choose the appropriate antonym of 'gradually'.",
+    "context": "The wind gradually filled under his wings.",
+    "options": ["Suddenly", "Slowly", "Step by step", "Progressively"],
+    "answer": "Suddenly"
+  },
+  {
+    "id": 74,
+    "section": "Antonym",
+    "word": "delightful",
+    "question": "Choose the appropriate antonym of 'delightful'.",
+    "context": "He experienced a delightful feeling of flight.",
+    "options": ["Unpleasant", "Charming", "Lovely", "Pleasurable"],
+    "answer": "Unpleasant"
+  },
+  {
+    "id": 75,
+    "section": "Antonym",
+    "word": "commenced",
+    "question": "Choose the appropriate antonym of 'commenced'.",
+    "context": "He commenced to flap his wings with joy.",
+    "options": ["Concluded", "Started", "Began", "Initiated"],
+    "answer": "Concluded"
+  },
+  {
+    "id": 76,
+    "section": "Antonym",
+    "word": "vast",
+    "question": "Choose the appropriate antonym of 'vast'.",
+    "context": "The vast sea lay spread under him.",
+    "options": ["Narrow", "Huge", "Immense", "Broad"],
+    "answer": "Narrow"
+  },
+  {
+    "id": 77,
+    "section": "Antonym",
+    "word": "beckoning",
+    "question": "Choose the appropriate antonym of 'beckoning'.",
+    "context": "His parents were beckoning to him from afar.",
+    "options": ["Repelling", "Calling", "Signaling", "Inviting"],
+    "answer": "Repelling"
+  },
+  {
+    "id": 78,
+    "section": "Antonym",
+    "word": "fright",
+    "question": "Choose the appropriate antonym of 'fright'.",
+    "context": "He recovered from his initial fright.",
+    "options": ["Confidence", "Fear", "Dread", "Alarm"],
+    "answer": "Confidence"
+  },
+  {
+    "id": 79,
+    "section": "Antonym",
+    "word": "exhausted",
+    "question": "Choose the appropriate antonym of 'exhausted'.",
+    "context": "He was exhausted after his long struggle.",
+    "options": ["Energetic", "Weary", "Fatigued", "Drained"],
+    "answer": "Energetic"
+  },
+  {
+    "id": 80,
+    "section": "Antonym",
+    "word": "praising",
+    "question": "Choose the appropriate antonym of 'praising'.",
+    "context": "His family was praising his courage.",
+    "options": ["Criticizing", "Commending", "Lauding", "Applauding"],
+    "answer": "Criticizing"
+  },
+  {
+    "id": 81,
+    "section": "Antonym",
+    "word": "starve",
+    "question": "Choose the appropriate antonym of 'starve'.",
+    "context": "If he stayed on the ledge, he would starve.",
+    "options": ["Feast", "Hunger", "Fast", "Suffer"],
+    "answer": "Feast"
+  },
+  {
+    "id": 82,
+    "section": "Antonym",
+    "word": "perfecting",
+    "question": "Choose the appropriate antonym of 'perfecting'.",
+    "context": "His parents were perfecting their flight skills.",
+    "options": ["Impairing", "Improving", "Refining", "Polishing"],
+    "answer": "Impairing"
+  },
+  {
+    "id": 83,
+    "section": "Antonym",
+    "word": "devour",
+    "question": "Choose the appropriate antonym of 'devour'.",
+    "context": "He watched his brother devour the fish.",
+    "options": ["Nibble", "Gulp", "Swallow", "Gorge"],
+    "answer": "Nibble"
+  },
+  {
+    "id": 84,
+    "section": "Antonym",
+    "word": "scolding",
+    "question": "Choose the appropriate antonym of 'scolding'.",
+    "context": "They stopped scolding him after he flew.",
+    "options": ["Praising", "Chiding", "Rebuking", "Reprimanding"],
+    "answer": "Praising"
+  },
+  {
+    "id": 85,
+    "section": "Antonym",
+    "word": "mockingly",
+    "question": "Choose the appropriate antonym of 'mockingly'.",
+    "context": "She looked at him mockingly as he begged.",
+    "options": ["Respectfully", "Derisively", "Scornfully", "Tauntingly"],
+    "answer": "Respectfully"
+  },
+  {
+    "id": 86,
+    "section": "Antonym",
+    "word": "limp",
+    "question": "Choose the appropriate antonym of 'limp'.",
+    "context": "His wings became limp in the still air.",
+    "options": ["Stiff", "Flexible", "Soft", "Slack"],
+    "answer": "Stiff"
+  },
+  {
+    "id": 87,
+    "section": "Antonym",
+    "word": "swooped",
+    "question": "Choose the appropriate antonym of 'swooped'.",
+    "context": "The bird swooped past the ledge.",
+    "options": ["Ascended slowly", "Dived fast", "Pounced down", "Dropped quickly"],
+    "answer": "Ascended slowly"
+  },
+  {
+    "id": 88,
+    "section": "Antonym",
+    "word": "solitary",
+    "question": "Choose the appropriate antonym of 'solitary'.",
+    "context": "He lived a solitary life on the ledge.",
+    "options": ["Social", "Lonely", "Isolated", "Single"],
+    "answer": "Social"
+  },
+  {
+    "id": 89,
+    "section": "Antonym",
+    "word": "triumph",
+    "question": "Choose the appropriate antonym of 'triumph'.",
+    "context": "His first flight was a great triumph.",
+    "options": ["Failure", "Victory", "Success", "Achievement"],
+    "answer": "Failure"
+  },
+  {
+    "id": 90,
+    "section": "Antonym",
+    "word": "despair",
+    "question": "Choose the appropriate antonym of 'despair'.",
+    "context": "He cried out in deep despair.",
+    "options": ["Hope", "Agony", "Misery", "Hopelessness"],
+    "answer": "Hope"
+  },
+  {
+    "id": 91,
+    "section": "Antonym",
+    "word": "submerged",
+    "question": "Choose the appropriate antonym of 'submerged'.",
+    "context": "His legs were submerged in the green water.",
+    "options": ["Surfaced", "Sunken", "Immersed", "Covered"],
+    "answer": "Surfaced"
+  },
+  {
+    "id": 92,
+    "section": "Antonym",
+    "word": "dizzy",
+    "question": "Choose the appropriate antonym of 'dizzy'.",
+    "context": "He felt a bit dizzy for a moment.",
+    "options": ["Stable", "Giddy", "Unsteady", "Lightheaded"],
+    "answer": "Stable"
+  },
+  {
+    "id": 93,
+    "section": "Antonym",
+    "word": "floating",
+    "question": "Choose the appropriate antonym of 'floating'.",
+    "context": "He was now floating on the surface of the ocean.",
+    "options": ["Sinking", "Drifting", "Gliding", "Buoyant"],
+    "answer": "Sinking"
+  },
+  {
+    "id": 94,
+    "section": "Antonym",
+    "word": "precipice",
+    "question": "Choose the appropriate antonym of 'precipice'.",
+    "context": "He stood above the edge of the precipice.",
+    "options": ["Flat plain", "Cliff face", "Steep drop", "Chasm"],
+    "answer": "Flat plain"
+  },
+  {
+    "id": 95,
+    "section": "Antonym",
+    "word": "expanse",
+    "question": "Choose the appropriate antonym of 'expanse'.",
+    "context": "He looked at the vast expanse of the sea.",
+    "options": ["Confined space", "Wide area", "Broad stretch", "Open ocean"],
+    "answer": "Confined space"
+  },
+  {
+    "id": 96,
+    "section": "Antonym",
+    "word": "amusedly",
+    "question": "Choose the appropriate antonym of 'amusedly'.",
+    "context": "His family watched his antics amusedly.",
+    "options": ["Solemnly", "Cheerfully", "Playfully", "Humorously"],
+    "answer": "Solemnly"
+  },
+  {
+    "id": 97,
+    "section": "Antonym",
+    "word": "shrivelled",
+    "question": "Choose the appropriate antonym of 'shrivelled'.",
+    "context": "The dried skin of the eggshell lay shrivelled.",
+    "options": ["Plump", "Withered", "Wrinkled", "Dried"],
+    "answer": "Plump"
+  },
+  {
+    "id": 98,
+    "section": "Antonym",
+    "word": "curveting",
+    "question": "Choose the appropriate antonym of 'curveting'.",
+    "context": "His siblings were curveting and soaring.",
+    "options": ["Stagnating", "Leaping", "Bounding", "Prancing"],
+    "answer": "Stagnating"
+  },
+  {
+    "id": 99,
+    "section": "Antonym",
+    "word": "victorious",
+    "question": "Choose the appropriate antonym of 'victorious'.",
+    "context": "The young seagull felt victorious after taking his first flight.",
+    "options": ["Defeated", "Triumphant", "Successful", "Winning"],
+    "answer": "Defeated"
+  },
+  {
+    "id": 100,
+    "section": "Antonym",
+    "word": "scared",
+    "question": "Choose the appropriate antonym of 'scared'.",
+    "context": "He was no longer scared of the sea.",
+    "options": ["Confident", "Frightened", "Terrified", "Fearful"],
+    "answer": "Confident"
+  }
+];
+
+        // Motivational quotes
+        const motivationalQuotes = [
+            "Believe you can, and you are halfway there.",
+            "Every question you attempt makes you stronger.",
+            "Success comes from consistent effort.",
+            "Don’t fear mistakes; learn from them.",
+            "Your hard work today creates your success tomorrow.",
+            "Confidence comes from preparation.",
+            "Small progress every day leads to great results.",
+            "Dream big. Work hard. Stay focused.",
+            "Never give up until you are proud.",
+            "You are capable of more than you think.",
+            "Spread your wings of courage and soar high in your exams!"
+        ];
+
+        // State variables
+        let questionsBank = [];
+        let userAnswers = new Array(100).fill(null);
+        let currentQIndex = 0;
+        let studentDetails = { name: "", class: "10th Standard", roll: "" };
+        let isTimedMode = false;
+        let timerInterval = null;
+        let timeRemainingSeconds = 3600;
+        let sectionTransitionShown = false;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            questionsBank = JSON.parse(JSON.stringify(rawQuestions));
+        });
+
+        function handleStartQuiz(e) {
+            e.preventDefault();
+            const nameInput = document.getElementById('student-name').value.trim();
+            if (!nameInput) {
+                alert('Please enter your name to begin the quiz.');
+                return;
+            }
+
+            studentDetails.name = nameInput;
+            studentDetails.class = document.getElementById('student-class').value.trim() || '10th Standard';
+            studentDetails.roll = document.getElementById('student-roll').value.trim() || 'N/A';
+
+            const modeChoice = document.querySelector('input[name="quiz-mode"]:checked').value;
+            isTimedMode = (modeChoice === 'timed');
+
+            userAnswers = new Array(100).fill(null);
+            currentQIndex = 0;
+            sectionTransitionShown = false;
+
+            document.getElementById('display-student-chip').textContent = studentDetails.name;
+
+            if (isTimedMode) {
+                timeRemainingSeconds = 3600;
+                document.getElementById('timer-display').style.display = 'flex';
+                startTimer();
+            } else {
+                document.getElementById('timer-display').style.display = 'none';
+                if (timerInterval) clearInterval(timerInterval);
+            }
+
+            renderPaletteGrid();
+            showQuestion(0);
+            switchScreen('quiz-screen');
+        }
+
+        function switchScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function startTimer() {
+            if (timerInterval) clearInterval(timerInterval);
+            updateTimerDisplay();
+            timerInterval = setInterval(() => {
+                timeRemainingSeconds--;
+                updateTimerDisplay();
+
+                if (timeRemainingSeconds === 600) {
+                    document.getElementById('timer-display').classList.add('warning');
+                    alert('⚠️ Notice: 10 minutes remaining in your quiz!');
+                }
+
+                if (timeRemainingSeconds <= 0) {
+                    clearInterval(timerInterval);
+                    alert('⏱️ Time is up! Your quiz will now be automatically submitted.');
+                    submitQuizFinal();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const mins = Math.floor(timeRemainingSeconds / 60);
+            const secs = timeRemainingSeconds % 60;
+            const formatStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+            document.getElementById('timer-count').textContent = formatStr;
+        }
+
+        function renderPaletteGrid() {
+            const grid = document.getElementById('palette-grid');
+            grid.innerHTML = '';
+            for (let i = 0; i < 100; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'palette-btn';
+                btn.id = `palette-btn-${i}`;
+                btn.textContent = i + 1;
+                btn.onclick = () => jumpToQuestion(i);
+                grid.appendChild(btn);
+            }
+            updatePaletteStatus();
+        }
+
+        function updatePaletteStatus() {
+            for (let i = 0; i < 100; i++) {
+                const btn = document.getElementById(`palette-btn-${i}`);
+                if (!btn) continue;
+                btn.className = 'palette-btn';
+
+                if (userAnswers[i] !== null) {
+                    btn.classList.add('answered'); // Green
+                }
+                if (i === currentQIndex) {
+                    btn.classList.add('current'); // Highlighted
+                }
+            }
+        }
+
+        function showQuestion(index) {
+            if (index < 0 || index >= 100) return;
+
+            // Section B Transition Modal
+            if (index >= 50 && !sectionTransitionShown && currentQIndex < 50) {
+                sectionTransitionShown = true;
+                showModal(
+                    '🎉 Section Complete!',
+                    '<strong>Excellent! You have completed the Synonyms section.<br>Now challenge yourself with Antonyms!</strong>',
+                    '🎯 Proceed to SECTION B – ANTONYMS',
+                    null,
+                    () => {
+                        currentQIndex = index;
+                        renderCurrentQuestion();
+                    }
+                );
+                return;
+            }
+
+            currentQIndex = index;
+            renderCurrentQuestion();
+        }
+
+        function renderCurrentQuestion() {
+            const q = questionsBank[currentQIndex];
+
+            const secBadge = document.getElementById('display-section-badge');
+            if (currentQIndex < 50) {
+                secBadge.textContent = 'SECTION A – SYNONYMS';
+                secBadge.style.background = 'var(--primary-blue)';
+            } else {
+                secBadge.textContent = 'SECTION B – ANTONYMS';
+                secBadge.style.background = 'var(--teal-accent)';
+            }
+
+            const pct = Math.round(((currentQIndex + 1) / 100) * 100);
+            document.getElementById('progress-fill').style.width = `${pct}%`;
+            document.getElementById('progress-text').textContent = `Question ${currentQIndex + 1} of 100 (${pct}%)`;
+
+            document.getElementById('q-num-label').textContent = `Question ${currentQIndex + 1} of 100 (${q.section})`;
+            document.getElementById('q-context').innerHTML = `Context sentence: <em>"${q.context}"</em>`;
+            document.getElementById('q-text').textContent = q.question;
+
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+
+            const prefixes = ['A', 'B', 'C', 'D'];
+            q.options.forEach((optText, optIdx) => {
+                const optCard = document.createElement('div');
+                optCard.className = 'option-card';
+                if (userAnswers[currentQIndex] === optText) {
+                    optCard.classList.add('selected');
+                }
+
+                optCard.onclick = () => selectOption(optText);
+
+                optCard.innerHTML = `
+                    <div class="option-prefix">${prefixes[optIdx]}</div>
+                    <div class="option-label">${escapeHtml(optText)}</div>
+                `;
+                container.appendChild(optCard);
+            });
+
+            // Motivational banners ~every 10 Qs
+            const banner = document.getElementById('motivation-banner');
+            if (currentQIndex > 0 && currentQIndex % 10 === 0) {
+                const quoteIdx = (currentQIndex / 10) % motivationalQuotes.length;
+                document.getElementById('motivation-text').textContent = motivationalQuotes[quoteIdx];
+                banner.style.display = 'flex';
+            } else {
+                banner.style.display = 'none';
+            }
+
+            document.getElementById('btn-prev').disabled = (currentQIndex === 0);
+
+            if (currentQIndex === 99) {
+                document.getElementById('btn-next').style.display = 'none';
+                document.getElementById('btn-submit').style.display = 'inline-flex';
+            } else {
+                document.getElementById('btn-next').style.display = 'inline-flex';
+                document.getElementById('btn-submit').style.display = 'none';
+            }
+
+            updatePaletteStatus();
+        }
+
+        function selectOption(selectedText) {
+            userAnswers[currentQIndex] = selectedText;
+            renderCurrentQuestion();
+        }
+
+        function goToPrevQuestion() {
+            if (currentQIndex > 0) showQuestion(currentQIndex - 1);
+        }
+
+        function goToNextQuestion() {
+            if (currentQIndex < 99) showQuestion(currentQIndex + 1);
+        }
+
+        function jumpToQuestion(idx) {
+            showQuestion(idx);
+        }
+
+        function promptSubmission() {
+            const unansweredCount = userAnswers.filter(a => a === null).length;
+
+            if (unansweredCount > 0) {
+                showModal(
+                    'Unanswered Questions Warning',
+                    `You still have <strong>${unansweredCount} unanswered questions</strong>. Do you want to review them before submitting?`,
+                    'SUBMIT ANYWAY',
+                    'REVIEW QUESTIONS',
+                    () => submitQuizFinal(),
+                    () => {
+                        const firstUnanswered = userAnswers.findIndex(a => a === null);
+                        if (firstUnanswered !== -1) jumpToQuestion(firstUnanswered);
+                    }
+                );
+            } else {
+                showModal(
+                    'Submit Quiz',
+                    'Are you sure you want to submit your final answers for evaluation?',
+                    'Yes, Submit Now',
+                    'Cancel',
+                    () => submitQuizFinal()
+                );
+            }
+        }
+
+        function submitQuizFinal() {
+            if (timerInterval) clearInterval(timerInterval);
+
+            let correctCount = 0;
+            let wrongCount = 0;
+            let unansweredCount = 0;
+
+            questionsBank.forEach((q, idx) => {
+                const userAns = userAnswers[idx];
+                if (userAns === null) {
+                    unansweredCount++;
+                } else if (userAns === q.answer) {
+                    correctCount++;
+                } else {
+                    wrongCount++;
+                }
+            });
+
+            const totalScore = correctCount;
+            const percentage = Math.round((totalScore / 100) * 100);
+
+            document.getElementById('res-score-num').textContent = `${totalScore} / 100`;
+            document.getElementById('res-score-pct').textContent = `Percentage: ${percentage}%`;
+
+            document.getElementById('res-student-name').textContent = studentDetails.name;
+            document.getElementById('res-student-class').textContent = studentDetails.class;
+            document.getElementById('res-student-roll').textContent = studentDetails.roll;
+
+            document.getElementById('stat-correct-val').textContent = correctCount;
+            document.getElementById('stat-wrong-val').textContent = wrongCount;
+            document.getElementById('stat-unanswered-val').textContent = unansweredCount;
+
+            // Performance message evaluation
+            let perfMsg = "";
+            if (percentage >= 90) {
+                perfMsg = "Outstanding! You are ready to fly high in your Board Examination!";
+            } else if (percentage >= 80) {
+                perfMsg = "Excellent work! Keep practising and aim for 100!";
+            } else if (percentage >= 70) {
+                perfMsg = "Very Good! A little more practice will make you stronger.";
+            } else if (percentage >= 60) {
+                perfMsg = "Good effort! Review your mistakes and try again.";
+            } else if (percentage >= 50) {
+                perfMsg = "You are improving. Consistent practice will bring success.";
+            } else {
+                perfMsg = "Never give up. Every successful journey begins with a first flight. Learn from your mistakes and try again!";
+            }
+            document.getElementById('res-performance-msg').textContent = perfMsg;
+
+            // Chart CSS update
+            const correctDeg = (correctCount / 100) * 360;
+            const wrongDeg = (wrongCount / 100) * 360;
+            const chartElem = document.getElementById('donut-chart');
+            chartElem.style.setProperty('--correct-deg', `${correctDeg}deg`);
+            chartElem.style.setProperty('--wrong-deg', `${wrongDeg}deg`);
+            document.getElementById('donut-pct-text').textContent = `${percentage}%`;
+
+            renderAnswerReviewList();
+            switchScreen('result-screen');
+        }
+
+        function renderAnswerReviewList() {
+            const container = document.getElementById('review-items-container');
+            container.innerHTML = '';
+
+            questionsBank.forEach((q, idx) => {
+                const userAns = userAnswers[idx];
+                let statusClass = 'is-unanswered';
+                let statusBadge = '⚠️ Unanswered';
+
+                if (userAns === q.answer) {
+                    statusClass = 'is-correct';
+                    statusBadge = '✅ Correct (+1)';
+                } else if (userAns !== null) {
+                    statusClass = 'is-wrong';
+                    statusBadge = '❌ Wrong';
+                }
+
+                const itemDiv = document.createElement('div');
+                itemDiv.className = `review-item ${statusClass}`;
+
+                itemDiv.innerHTML = `
+                    <div class="review-header">
+                        <span>Q${idx + 1}. ${q.section} (${q.word})</span>
+                        <span>${statusBadge}</span>
+                    </div>
+                    <div class="review-q-text">${q.question}</div>
+                    <div class="review-context">Context: "${q.context}"</div>
+                    <div class="review-answers-grid">
+                        <div class="review-ans-box ${userAns !== q.answer && userAns !== null ? 'user-wrong' : ''}">
+                            <strong>Your Answer:</strong> ${userAns !== null ? escapeHtml(userAns) : '<span style="color:#ea580c">Unanswered</span>'}
+                        </div>
+                        <div class="review-ans-box correct-ans">
+                            <strong>Correct Answer:</strong> ${escapeHtml(q.answer)}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(itemDiv);
+            });
+        }
+
+        function toggleAnswerReview() {
+            const panel = document.getElementById('review-panel');
+            if (panel.style.display === 'none' || panel.style.display === '') {
+                panel.style.display = 'block';
+                panel.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                panel.style.display = 'none';
+            }
+        }
+
+        function resetQuiz() {
+            questionsBank = JSON.parse(JSON.stringify(rawQuestions));
+
+            // Shuffle options per question without breaking answer key linkage
+            questionsBank.forEach(q => {
+                shuffleArray(q.options);
+            });
+
+            // Shuffle within section
+            const synonyms = questionsBank.slice(0, 50);
+            const antonyms = questionsBank.slice(50, 100);
+            shuffleArray(synonyms);
+            shuffleArray(antonyms);
+
+            synonyms.forEach((q, idx) => { q.id = idx + 1; });
+            antonyms.forEach((q, idx) => { q.id = idx + 51; });
+            questionsBank = [...synonyms, ...antonyms];
+
+            userAnswers = new Array(100).fill(null);
+            currentQIndex = 0;
+            sectionTransitionShown = false;
+
+            document.getElementById('student-name').value = studentDetails.name;
+            switchScreen('welcome-screen');
+        }
+
+        function showModal(title, bodyHtml, primaryBtnText, secondaryBtnText, onPrimary, onSecondary) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-body').innerHTML = bodyHtml;
+
+            const priBtn = document.getElementById('modal-btn-pri');
+            const secBtn = document.getElementById('modal-btn-sec');
+
+            priBtn.textContent = primaryBtnText || 'OK';
+            priBtn.onclick = () => {
+                closeModal();
+                if (onPrimary) onPrimary();
+            };
+
+            if (secondaryBtnText) {
+                secBtn.style.display = 'inline-block';
+                secBtn.textContent = secondaryBtnText;
+                secBtn.onclick = () => {
+                    closeModal();
+                    if (onSecondary) onSecondary();
+                };
+            } else {
+                secBtn.style.display = 'none';
+            }
+
+            document.getElementById('quiz-modal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('quiz-modal').classList.remove('active');
+        }
+
+        function shuffleArray(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+    </script>
+</body>
+</html>
