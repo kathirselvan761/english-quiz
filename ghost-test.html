@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Night the Ghost Got In - English Practice Test | Shree Vidyalaya</title>
+    <meta name="description" content="10th Standard English Prose Practice Test for 'The Night the Ghost Got In' by James Grover Thurber. 25 Comprehensive Questions & Vocabulary.">
+    <style>
+        :root {
+            --primary-dark: #0f172a;
+            --primary-blue: #1e3a8a;
+            --sky-blue: #0284c7;
+            --sky-light: #e0f2fe;
+            --ocean-blue: #0369a1;
+            --teal-accent: #0d9488;
+            --gold-accent: #d97706;
+            --gold-light: #fef3c7;
+            --success-green: #16a34a;
+            --success-light: #dcfce7;
+            --danger-red: #dc2626;
+            --danger-light: #fee2e2;
+            --warning-orange: #ea580c;
+            --warning-light: #ffedd5;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --card-bg: rgba(255, 255, 255, 0.98);
+            --glass-border: rgba(226, 232, 240, 0.8);
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+            --shadow-lg: 0 20px 30px -10px rgba(30, 58, 138, 0.15);
+            --radius-lg: 16px;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0369a1 100%);
+            background-attachment: fixed;
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+        }
+
+        /* App Container */
+        .app-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Card */
+        .school-header-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--glass-border);
+            margin-bottom: 20px;
+        }
+
+        .school-name {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .school-location {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--sky-blue);
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .quiz-main-title {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .quiz-subtitle {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--gold-accent);
+            margin-bottom: 8px;
+        }
+
+        .prepared-by {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            border-top: 1px dashed #cbd5e1;
+            padding-top: 8px;
+            display: inline-block;
+        }
+
+        /* Screen Views */
+        .screen {
+            display: none;
+            width: 100%;
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Glass / Card Panel */
+        .glass-panel {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--glass-border);
+            margin-bottom: 20px;
+        }
+
+        .welcome-content {
+            text-align: center;
+        }
+
+        .badges-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 16px 0 24px;
+            flex-wrap: wrap;
+        }
+
+        .info-badge {
+            background: var(--sky-light);
+            color: var(--ocean-blue);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            border: 1px solid #bae6fd;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, #fef3c7, #fffbeb);
+            border-left: 4px solid var(--gold-accent);
+            padding: 14px 18px;
+            border-radius: var(--radius-md);
+            margin: 16px 0 24px;
+            font-style: italic;
+            color: #78350f;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .student-form {
+            max-width: 480px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+        }
+
+        .form-group label .required {
+            color: var(--danger-red);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: var(--radius-md);
+            border: 2px solid #cbd5e1;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            background: #ffffff;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--sky-blue);
+            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+        }
+
+        .btn-start {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: var(--radius-md);
+            background: linear-gradient(135deg, #1e3a8a, #0284c7);
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px -4px rgba(30, 58, 138, 0.4);
+            transition: all 0.2s ease;
+        }
+
+        .btn-start:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px -4px rgba(30, 58, 138, 0.5);
+            background: linear-gradient(135deg, #1e40af, #0369a1);
+        }
+
+        /* Sticky Quiz Header */
+        .sticky-quiz-header {
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: var(--radius-md);
+            padding: 12px 16px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--glass-border);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .student-chip {
+            background: #f1f5f9;
+            color: var(--text-dark);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            max-width: 160px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .section-badge {
+            background: var(--primary-blue);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 800;
+        }
+
+        .header-center {
+            flex: 1;
+            max-width: 320px;
+            min-width: 140px;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 10px;
+            background: #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--sky-blue), var(--teal-accent));
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 3px;
+        }
+
+        /* Question Box */
+        .question-card {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 16px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .question-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .q-number {
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--sky-blue);
+        }
+
+        .q-mark {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--teal-accent);
+            background: #f0fdf4;
+            padding: 2px 10px;
+            border-radius: 12px;
+            border: 1px solid #bbf7d0;
+        }
+
+        .question-context {
+            font-size: 0.92rem;
+            color: #475569;
+            background: #f8fafc;
+            border-left: 3px solid var(--sky-blue);
+            padding: 10px 14px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin-bottom: 14px;
+            font-style: italic;
+        }
+
+        .question-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        /* Options */
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .option-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .option-card:hover {
+            border-color: var(--sky-blue);
+            background: #f0f9ff;
+        }
+
+        .option-card.selected {
+            border-color: var(--sky-blue);
+            background: var(--sky-light);
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.12);
+        }
+
+        .option-prefix {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #e2e8f0;
+            color: var(--text-muted);
+            font-weight: 800;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .option-card.selected .option-prefix {
+            background: var(--sky-blue);
+            color: #ffffff;
+        }
+
+        .option-label {
+            font-size: 0.98rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            flex: 1;
+        }
+
+        .quiz-nav-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn-nav {
+            padding: 12px 24px;
+            border-radius: var(--radius-md);
+            border: none;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-prev {
+            background: #ffffff;
+            color: var(--text-dark);
+            border: 2px solid #cbd5e1;
+        }
+
+        .btn-prev:hover:not(:disabled) {
+            background: #f1f5f9;
+        }
+
+        .btn-next {
+            background: var(--sky-blue);
+            color: #ffffff;
+        }
+
+        .btn-next:hover:not(:disabled) {
+            background: var(--ocean-blue);
+        }
+
+        .btn-submit-main {
+            background: linear-gradient(135deg, #16a34a, #15803d);
+            color: #ffffff;
+        }
+
+        .btn-submit-main:hover:not(:disabled) {
+            background: linear-gradient(135deg, #15803d, #166534);
+        }
+
+        .btn-nav:disabled {
+            opacity: 0.45;
+            cursor: not-allowed;
+        }
+
+        /* Question Palette */
+        .palette-panel {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 18px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e2e8f0;
+        }
+
+        .palette-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .palette-title {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+
+        .palette-legend {
+            display: flex;
+            gap: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .dot-answered { background: var(--success-green); }
+        .dot-unanswered { background: #e2e8f0; border: 1px solid #94a3b8; }
+        .dot-current { background: var(--gold-accent); }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+            gap: 8px;
+        }
+
+        .palette-btn {
+            height: 38px;
+            border-radius: var(--radius-sm);
+            border: 1px solid #cbd5e1;
+            background: #f8fafc;
+            color: var(--text-dark);
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .palette-btn:hover {
+            border-color: var(--sky-blue);
+        }
+
+        .palette-btn.answered {
+            background: var(--success-green);
+            border-color: var(--success-green);
+            color: #ffffff;
+        }
+
+        .palette-btn.current {
+            border: 3px solid var(--gold-accent);
+            box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.25);
+            font-weight: 800;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-box {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            max-width: 440px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .modal-icon {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .modal-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 8px;
+        }
+
+        .modal-body {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .btn-modal {
+            padding: 10px 20px;
+            border-radius: var(--radius-md);
+            border: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .btn-modal-primary { background: var(--sky-blue); color: white; }
+        .btn-modal-secondary { background: #e2e8f0; color: var(--text-dark); }
+
+        /* Result View */
+        .score-card {
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a, #0284c7);
+            color: white;
+            border-radius: var(--radius-lg);
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .score-number {
+            font-size: 3.6rem;
+            font-weight: 800;
+            line-height: 1;
+            margin: 10px 0;
+            color: #ffffff;
+        }
+
+        .score-percentage {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #7dd3fc;
+            margin-bottom: 14px;
+        }
+
+        .performance-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .results-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: #ffffff;
+            border-radius: var(--radius-md);
+            padding: 16px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-card.correct { border-top: 4px solid var(--success-green); }
+        .stat-card.wrong { border-top: 4px solid var(--danger-red); }
+        .stat-card.unanswered { border-top: 4px solid var(--warning-orange); }
+
+        .stat-val {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .stat-card.correct .stat-val { color: var(--success-green); }
+        .stat-card.wrong .stat-val { color: var(--danger-red); }
+        .stat-card.unanswered .stat-val { color: var(--warning-orange); }
+
+        .stat-lbl {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        /* Donut Chart */
+        .chart-section {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            margin-bottom: 24px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+
+        .chart-title {
+            font-size: 0.95rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .donut-chart-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 16px;
+        }
+
+        .donut-chart {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(
+                var(--success-green) 0deg calc(var(--correct-deg, 0deg)),
+                var(--danger-red) calc(var(--correct-deg, 0deg)) calc(var(--correct-deg, 0deg) + var(--wrong-deg, 0deg)),
+                var(--warning-orange) calc(var(--correct-deg, 0deg) + var(--wrong-deg, 0deg)) 360deg
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donut-center {
+            width: 100px;
+            height: 100px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donut-center-val {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+        }
+
+        .result-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-result {
+            padding: 12px 20px;
+            border-radius: var(--radius-md);
+            border: none;
+            font-weight: 700;
+            font-size: 0.92rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-review { background: var(--sky-blue); color: white; }
+        .btn-retry { background: var(--gold-accent); color: white; }
+        .btn-print { background: var(--primary-blue); color: white; }
+
+        /* Answer Review List */
+        .review-panel {
+            margin-top: 20px;
+        }
+
+        .review-item {
+            background: #ffffff;
+            border-radius: var(--radius-md);
+            padding: 16px;
+            margin-bottom: 12px;
+            border-left: 5px solid #cbd5e1;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .review-item.is-correct { border-left-color: var(--success-green); background: #f0fdf4; }
+        .review-item.is-wrong { border-left-color: var(--danger-red); background: #fef2f2; }
+        .review-item.is-unanswered { border-left-color: var(--warning-orange); background: #fff7ed; }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 800;
+            font-size: 0.88rem;
+            margin-bottom: 6px;
+        }
+
+        .review-q-text {
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .review-context {
+            font-size: 0.86rem;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .review-answers-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 0.86rem;
+        }
+
+        .review-ans-box {
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+        }
+
+        .review-ans-box.user-wrong {
+            background: #fee2e2;
+            color: #991b1b;
+            border-color: #fca5a5;
+            font-weight: 700;
+        }
+
+        .review-ans-box.correct-ans {
+            background: #dcfce7;
+            color: #166534;
+            border-color: #86efac;
+            font-weight: 700;
+        }
+
+        /* Print Media Stylesheet */
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+
+            .sticky-quiz-header, .quiz-nav-row, .palette-panel, .result-actions, .btn-start {
+                display: none !important;
+            }
+
+            .app-container {
+                max-width: 100% !important;
+                padding: 0 !important;
+            }
+
+            .glass-panel, .school-header-card, .score-card, .stat-card, .chart-section {
+                box-shadow: none !important;
+                border: 1px solid #ccc !important;
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+
+            .quiz-main-title, .score-number {
+                color: #000000 !important;
+            }
+
+            .score-card {
+                background: #f8fafc !important;
+                color: #000000 !important;
+            }
+
+            .score-percentage, .performance-badge {
+                color: #000000 !important;
+                border: 1px solid #000 !important;
+            }
+
+            .print-teacher-sig {
+                display: block !important;
+                margin-top: 40px;
+                text-align: right;
+                font-weight: 700;
+                font-size: 0.95rem;
+            }
+        }
+
+        .print-teacher-sig {
+            display: none;
+        }
+
+        /* Mobile Breakpoints */
+        @media (max-width: 640px) {
+            .app-container { padding: 10px; }
+            .school-header-card { padding: 16px 12px; }
+            .school-name { font-size: 1.05rem; }
+            .quiz-main-title { font-size: 1.25rem; }
+            .glass-panel { padding: 16px; }
+            .question-card { padding: 16px; }
+            .question-text { font-size: 0.98rem; }
+            .option-card { padding: 12px; gap: 10px; }
+            .option-label { font-size: 0.88rem; }
+            .sticky-quiz-header { padding: 8px 12px; }
+            .review-answers-grid { grid-template-columns: 1fr; }
+            .score-number { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- Prominent Header Card -->
+        <header class="school-header-card">
+            <div class="school-name">SHREE VIDYALAYA MATRIC HIGHER SECONDARY SCHOOL, GOBICHETTIPALAYAM</div>
+            <h1 class="quiz-main-title">THE NIGHT THE GHOST GOT IN</h1>
+            <div class="quiz-subtitle">10th Standard English – Prose Practice Test (James Grover Thurber)</div>
+            <div class="prepared-by">Prepared by: <strong>P.Karuppusamy M.A, B.Ed, M.Phil.</strong></div>
+        </header>
+
+        <!-- SCREEN 1: WELCOME / START PAGE -->
+        <section id="welcome-screen" class="screen active">
+            <div class="glass-panel welcome-content">
+                <div class="badges-row">
+                    <span class="info-badge">📋 25 Questions</span>
+                    <span class="info-badge">💯 25 Marks</span>
+                    <span class="info-badge">📖 Prose Comprehension</span>
+                    <span class="info-badge">🔤 Vocabulary & Events</span>
+                </div>
+
+                <div class="quote-box">
+                    “The ghost that got into our house on the night of November 17, 1915, raised such a hullabaloo of misunderstandings...”
+                </div>
+
+                <form id="student-form" class="student-form" onsubmit="handleStartQuiz(event)">
+                    <div class="form-group">
+                        <label for="student-name">Student Name <span class="required">*</span></label>
+                        <input type="text" id="student-name" class="form-control" placeholder="Enter student full name" required autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-class">Class / Section</label>
+                        <input type="text" id="student-class" class="form-control" value="10th Standard" placeholder="e.g. 10th A" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-roll">Roll Number <span style="font-weight: normal; color: var(--text-muted);">(Optional)</span></label>
+                        <input type="text" id="student-roll" class="form-control" placeholder="e.g. 10105" autocomplete="off">
+                    </div>
+
+                    <button type="submit" class="btn-start">START PRACTICE TEST</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- SCREEN 2: QUIZ PAGE -->
+        <section id="quiz-screen" class="screen">
+            <!-- Compact Sticky Header -->
+            <div class="sticky-quiz-header">
+                <div class="header-left">
+                    <span id="display-student-chip" class="student-chip">Student</span>
+                    <span class="section-badge">PROSE TEST</span>
+                </div>
+                <div class="header-center">
+                    <div class="progress-bar-container">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <div id="progress-text" class="progress-text">Question 1 of 25 (4%)</div>
+                </div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="question-card">
+                <div class="question-meta">
+                    <span id="q-num-label" class="q-number">Question 1 of 25</span>
+                    <span class="q-mark">1 Mark</span>
+                </div>
+
+                <div id="q-context" class="question-context">
+                    "Context excerpt will appear here"
+                </div>
+
+                <div id="q-text" class="question-text">
+                    Question text will appear here.
+                </div>
+
+                <div id="options-container" class="options-grid">
+                    <!-- Option cards rendered dynamically -->
+                </div>
+            </div>
+
+            <!-- Quiz Navigation -->
+            <div class="quiz-nav-row">
+                <button id="btn-prev" class="btn-nav btn-prev" onclick="goToPrevQuestion()">
+                    ⬅️ Previous
+                </button>
+                <button id="btn-next" class="btn-nav btn-next" onclick="goToNextQuestion()">
+                    Next ➡️
+                </button>
+                <button id="btn-submit" class="btn-nav btn-submit-main" style="display: none;" onclick="promptSubmission()">
+                    🏁 SUBMIT TEST
+                </button>
+            </div>
+
+            <!-- Question Palette -->
+            <div class="palette-panel">
+                <div class="palette-header">
+                    <div class="palette-title">Question Palette</div>
+                    <div class="palette-legend">
+                        <div class="legend-item"><span class="legend-dot dot-answered"></span> Answered</div>
+                        <div class="legend-item"><span class="legend-dot dot-unanswered"></span> Unanswered</div>
+                        <div class="legend-item"><span class="legend-dot dot-current"></span> Current</div>
+                    </div>
+                </div>
+                <div id="palette-grid" class="palette-grid">
+                    <!-- Buttons 1-25 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 3: RESULT PAGE -->
+        <section id="result-screen" class="screen">
+            <div class="score-card">
+                <h2>TEST RESULT</h2>
+                <div style="font-size: 1rem; font-weight: 700; opacity: 0.9;">YOUR SCORE</div>
+                <div id="res-score-num" class="score-number">0 / 25</div>
+                <div id="res-score-pct" class="score-percentage">Percentage: 0%</div>
+                <div id="res-performance-msg" class="performance-badge">
+                    Evaluating performance...
+                </div>
+            </div>
+
+            <div class="glass-panel">
+                <h3 style="margin-bottom: 14px; color: var(--primary-blue); font-weight: 800;">Student Details</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 20px; font-size: 0.92rem;">
+                    <div><strong>Student Name:</strong> <span id="res-student-name">-</span></div>
+                    <div><strong>Class / Section:</strong> <span id="res-student-class">-</span></div>
+                    <div><strong>Roll Number:</strong> <span id="res-student-roll">-</span></div>
+                    <div><strong>Total Questions:</strong> 25</div>
+                </div>
+
+                <div class="results-summary-grid">
+                    <div class="stat-card correct">
+                        <div id="stat-correct-val" class="stat-val">0</div>
+                        <div class="stat-lbl">Correct Answers</div>
+                    </div>
+                    <div class="stat-card wrong">
+                        <div id="stat-wrong-val" class="stat-val">0</div>
+                        <div class="stat-lbl">Wrong Answers</div>
+                    </div>
+                    <div class="stat-card unanswered">
+                        <div id="stat-unanswered-val" class="stat-val">0</div>
+                        <div class="stat-lbl">Unanswered Questions</div>
+                    </div>
+                </div>
+
+                <!-- Pure CSS Donut Chart -->
+                <div class="chart-section">
+                    <div class="chart-title">Visual Performance Breakdown</div>
+                    <div class="donut-chart-container">
+                        <div id="donut-chart" class="donut-chart">
+                            <div class="donut-center">
+                                <div id="donut-pct-text" class="donut-center-val">0%</div>
+                                <div style="font-size: 0.7rem; font-weight: 700; color: var(--text-muted);">ACCURACY</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 16px; font-size: 0.8rem; font-weight: 700;">
+                        <span style="color: var(--success-green);">■ Correct</span>
+                        <span style="color: var(--danger-red);">■ Wrong</span>
+                        <span style="color: var(--warning-orange);">■ Unanswered</span>
+                    </div>
+                </div>
+
+                <div class="result-actions">
+                    <button class="btn-result btn-review" onclick="toggleAnswerReview()">🔍 REVIEW ANSWERS</button>
+                    <button class="btn-result btn-retry" onclick="resetQuiz()">🔄 TRY AGAIN</button>
+                    <button class="btn-result btn-print" onclick="window.print()">🖨️ PRINT RESULT</button>
+                </div>
+
+                <div class="print-teacher-sig">
+                    <p>Teacher Signature: _______________________</p>
+                    <p style="font-size: 0.8rem; color: #555; margin-top: 4px;">P.Karuppusamy M.A, B.Ed, M.Phil.</p>
+                </div>
+            </div>
+
+            <!-- Answer Review -->
+            <div id="review-panel" class="review-panel" style="display: none;">
+                <div class="glass-panel">
+                    <h3 style="margin-bottom: 16px; color: var(--primary-blue); font-weight: 800;">Answer Review</h3>
+                    <div id="review-items-container">
+                        <!-- Items rendered dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="margin-top: auto; padding: 20px 10px 10px; text-align: center; font-size: 0.82rem; color: #ffffff; text-shadow: 0 1px 3px rgba(0,0,0,0.4);">
+            <p style="font-weight: 700; margin-bottom: 2px;">Shree Vidyalaya Matric Higher Secondary School, Gobichettipalayam.</p>
+            <p>Prepared by P.Karuppusamy M.A, B.Ed, M.Phil.</p>
+            <p style="font-style: italic; color: #fef3c7; margin-top: 4px; font-weight: 600;">“Learn Today • Lead Tomorrow”</p>
+        </footer>
+
+    </div>
+
+    <!-- Modal Dialog -->
+    <div id="quiz-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div id="modal-icon" class="modal-icon">🔔</div>
+            <h3 id="modal-title" class="modal-title">Notice</h3>
+            <div id="modal-body" class="modal-body">Modal content.</div>
+            <div id="modal-actions" class="modal-actions">
+                <button id="modal-btn-sec" class="btn-modal btn-modal-secondary" onclick="closeModal()">Cancel</button>
+                <button id="modal-btn-pri" class="btn-modal btn-modal-primary" onclick="closeModal()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // AUTHENTIC 25 QUESTION DATASET FOR "THE NIGHT THE GHOST GOT IN"
+        const rawQuestions = [
+            {
+                id: 1,
+                question: "At what time did the mysterious footsteps start walking around the dining-room table?",
+                context: "The ghost that got into our house on the night of November 17, 1915, raised such a hullabaloo of misunderstandings...",
+                options: ["1:15 A.M.", "12:00 P.M.", "2:30 A.M.", "3:45 A.M."],
+                answer: "1:15 A.M."
+            },
+            {
+                id: 2,
+                question: "Where was the narrator coming out of when he first heard the rhythmic steps?",
+                context: "I had just stepped out of the bathtub and was drying myself when I heard the steps.",
+                options: ["The bathroom", "The kitchen", "The attic", "The cellar"],
+                answer: "The bathroom"
+            },
+            {
+                id: 3,
+                question: "Who was the narrator's brother who came out of his room trembling when he heard the noise?",
+                context: "My brother Herman was asleep in his room. He awoke and came out, trembling.",
+                options: ["Herman", "Roy", "Joe", "Bodwell"],
+                answer: "Herman"
+            },
+            {
+                id: 4,
+                question: "What did Herman do immediately when he heard the steps coming up the stairs towards them?",
+                context: "Herman rushed to his room and slammed the door shut, locking it securely.",
+                options: ["Slammed his door shut", "Ran out into the street", "Threw a shoe", "Called the police"],
+                answer: "Slammed his door shut"
+            },
+            {
+                id: 5,
+                question: "Which vocabulary word describes the noisy commotion and uproar caused by the events of that night?",
+                context: "The ghost raised such a hullabaloo of misunderstandings that night.",
+                options: ["Hullabaloo", "Bevelled", "Intuitively", "Whammed"],
+                answer: "Hullabaloo"
+            },
+            {
+                id: 6,
+                question: "Where did the narrator's eccentric grandfather sleep in the house?",
+                context: "Grandfather was sleeping in the attic in his old wooden bed.",
+                options: ["In the attic", "In the basement", "In the parlor", "On the dining room sofa"],
+                answer: "In the attic"
+            },
+            {
+                id: 7,
+                question: "What did the mother suspect was inside the house when she woke up?",
+                context: "Mother came out of her room, convinced there were burglars downstairs.",
+                options: ["Burglars", "Fire", "Ghosts", "Wild animals"],
+                answer: "Burglars"
+            },
+            {
+                id: 8,
+                question: "How did the mother decide to alert the neighbours, the Bodwells, to call the police?",
+                context: "Mother opened her bedroom window and threw a shoe through the Bodwells' window.",
+                options: ["Threw a shoe through their window", "Called them on the telephone", "Shouted from the porch", "Blew a loud whistle"],
+                answer: "Threw a shoe through their window"
+            },
+            {
+                id: 9,
+                question: "Whose bedroom window was smashed by the mother's shoe in the dark?",
+                context: "The shoe smashed right through the window of Mr. Bodwell's house next door.",
+                options: ["Mr. Bodwell's window", "General Meade's window", "The reporter's window", "The patrolman's window"],
+                answer: "Mr. Bodwell's window"
+            },
+            {
+                id: 10,
+                question: "Which word describes Mr. Bodwell's voice when he shouted back from his window?",
+                context: "'What's going on over there?' shouted Mr. Bodwell gruffly from his window.",
+                options: ["Gruffly", "Intuitively", "Bevelled", "Whammed"],
+                answer: "Gruffly"
+            },
+            {
+                id: 11,
+                question: "How did the police force their way into the house when they arrived?",
+                context: "The patrolmen broke down the front door glass and burst into the hallway.",
+                options: ["Broke down the front door glass", "Climbed through the attic window", "Unlocked the back door", "Used a ladder"],
+                answer: "Broke down the front door glass"
+            },
+            {
+                id: 12,
+                question: "What musical instrument belonging to brother Joe was found in the hallway during the police search?",
+                context: "A policeman kicked an old zither that Joe had bought at a pawnshop.",
+                options: ["A zither", "A violin", "A guitar", "A saxophone"],
+                answer: "A zither"
+            },
+            {
+                id: 13,
+                question: "What small pet had died on the zither according to the narrator?",
+                context: "Our guinea pig used to sleep on the zither and had died there.",
+                options: ["A guinea pig", "A hamster", "A white mouse", "A canary"],
+                answer: "A guinea pig"
+            },
+            {
+                id: 14,
+                question: "Who did Grandfather mistake the visiting policemen for when they entered the attic?",
+                context: "Grandfather thought they were deserters from General Meade's army.",
+                options: ["General Meade's deserters", "City burglars", "Bank robbers", "Firefighters"],
+                answer: "General Meade's deserters"
+            },
+            {
+                id: 15,
+                question: "What violent action did Grandfather take against Officer Joe in the attic?",
+                context: "Grandfather grabbed the officer's gun and shot him in the shoulder.",
+                options: ["Grabbed his gun and shot him in the shoulder", "Threw a shoe at him", "Locked him in a closet", "Pushed him down the stairs"],
+                answer: "Grabbed his gun and shot him in the shoulder"
+            },
+            {
+                id: 16,
+                question: "Which vocabulary word is used when describing how Mother threw the second shoe through the glass?",
+                context: "She picked up another shoe and whammed it through the window glass.",
+                options: ["Whammed", "Slammed", "Intuitively", "Bevelled"],
+                answer: "Whammed"
+            },
+            {
+                id: 17,
+                question: "What type of mirror glass in the hallway is described as having angled decorative edges?",
+                context: "The flashlight beams reflected off the bevelled mirror in the hall.",
+                options: ["Bevelled", "Hullabaloo", "Gruff", "Intuitive"],
+                answer: "Bevelled"
+            },
+            {
+                id: 18,
+                question: "What did the narrator reply when the inquisitive reporter asked what all the commotion was about?",
+                context: "'What's the trouble, son?' asked the reporter. 'Ghosts,' I said.",
+                options: ["Ghosts", "Burglars", "Fire", "Practice exercise"],
+                answer: "Ghosts"
+            },
+            {
+                id: 19,
+                question: "What did Grandfather reveal at the breakfast table the next morning?",
+                context: "Grandfather fresh as a daisy asked why everyone was staring, admitting he came down for water at 1:15 A.M.",
+                options: ["He came down to the dining room for a glass of water at 1:15 A.M.", "He had seen a real ghost", "He called the police himself", "He locked the doors"],
+                answer: "He came down to the dining room for a glass of water at 1:15 A.M."
+            },
+            {
+                id: 20,
+                question: "Which term refers to a police officer patrolling a street or district in the story?",
+                context: "A patrolman ran up the front steps with his gun drawn.",
+                options: ["Patrolman", "Deserter", "Reporter", "Zitherist"],
+                answer: "Patrolman"
+            },
+            {
+                id: 21,
+                question: "How did the narrator intuitively feel about the origin of the footsteps before jumping to conclusions?",
+                context: "Intuitively I knew that it was neither my father nor brother, but a ghost.",
+                options: ["Intuitively he felt it was a ghost", "He knew it was the police", "He thought it was a stray dog", "He assumed it was a burglar"],
+                answer: "Intuitively he felt it was a ghost"
+            },
+            {
+                id: 22,
+                question: "Why did Herman slam his bedroom door shut and lock it tightly?",
+                context: "He heard footsteps coming up the dark stairs straight towards his room.",
+                options: ["He heard footsteps ascending the stairs in the dark", "He was annoyed by the light", "He was preparing for bed", "The police ordered him to lock it"],
+                answer: "He heard footsteps ascending the stairs in the dark"
+            },
+            {
+                id: 23,
+                question: "What clothing was Grandfather wearing when the police confronted him in the attic?",
+                context: "Grandfather was wearing a flannel nightshirt and a leather nightcap.",
+                options: ["A nightshirt and nightcap", "A full military uniform", "A bathrobe and slippers", "A dark trench coat"],
+                answer: "A nightshirt and nightcap"
+            },
+            {
+                id: 24,
+                question: "What was the police response after searching every closet, drawer, and corner of the house?",
+                context: "The police found no trace of any burglar anywhere in the house.",
+                options: ["They found no trace of any burglar", "They caught two robbers", "They recovered stolen gold", "They arrested Herman"],
+                answer: "They found no trace of any burglar"
+            },
+            {
+                id: 25,
+                question: "What is the primary literary style and mood of James Thurber's 'The Night the Ghost Got In'?",
+                context: "The entire narrative is a classic humorous recount of family misunderstandings.",
+                options: ["Humorous and satirical", "Tragic and sad", "Horror and mystery", "Scientific and factual"],
+                answer: "Humorous and satirical"
+            }
+        ];
+
+        // State variables
+        let questionsBank = [];
+        let userAnswers = new Array(25).fill(null);
+        let currentQIndex = 0;
+        let studentDetails = { name: "", class: "10th Standard", roll: "" };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            questionsBank = JSON.parse(JSON.stringify(rawQuestions));
+        });
+
+        function handleStartQuiz(e) {
+            e.preventDefault();
+            const nameInput = document.getElementById('student-name').value.trim();
+            if (!nameInput) {
+                alert('Please enter your name to begin the test.');
+                return;
+            }
+
+            studentDetails.name = nameInput;
+            studentDetails.class = document.getElementById('student-class').value.trim() || '10th Standard';
+            studentDetails.roll = document.getElementById('student-roll').value.trim() || 'N/A';
+
+            userAnswers = new Array(25).fill(null);
+            currentQIndex = 0;
+
+            document.getElementById('display-student-chip').textContent = studentDetails.name;
+
+            renderPaletteGrid();
+            showQuestion(0);
+            switchScreen('quiz-screen');
+        }
+
+        function switchScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function renderPaletteGrid() {
+            const grid = document.getElementById('palette-grid');
+            grid.innerHTML = '';
+            for (let i = 0; i < 25; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'palette-btn';
+                btn.id = `palette-btn-${i}`;
+                btn.textContent = i + 1;
+                btn.onclick = () => jumpToQuestion(i);
+                grid.appendChild(btn);
+            }
+            updatePaletteStatus();
+        }
+
+        function updatePaletteStatus() {
+            for (let i = 0; i < 25; i++) {
+                const btn = document.getElementById(`palette-btn-${i}`);
+                if (!btn) continue;
+                btn.className = 'palette-btn';
+
+                if (userAnswers[i] !== null) {
+                    btn.classList.add('answered');
+                }
+                if (i === currentQIndex) {
+                    btn.classList.add('current');
+                }
+            }
+        }
+
+        function showQuestion(index) {
+            if (index < 0 || index >= 25) return;
+            currentQIndex = index;
+            renderCurrentQuestion();
+        }
+
+        function renderCurrentQuestion() {
+            const q = questionsBank[currentQIndex];
+
+            const pct = Math.round(((currentQIndex + 1) / 25) * 100);
+            document.getElementById('progress-fill').style.width = `${pct}%`;
+            document.getElementById('progress-text').textContent = `Question ${currentQIndex + 1} of 25 (${pct}%)`;
+
+            document.getElementById('q-num-label').textContent = `Question ${currentQIndex + 1} of 25`;
+            document.getElementById('q-context').innerHTML = `Lesson Context: <em>"${q.context}"</em>`;
+            document.getElementById('q-text').textContent = q.question;
+
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+
+            const prefixes = ['A', 'B', 'C', 'D'];
+            q.options.forEach((optText, optIdx) => {
+                const optCard = document.createElement('div');
+                optCard.className = 'option-card';
+                if (userAnswers[currentQIndex] === optText) {
+                    optCard.classList.add('selected');
+                }
+
+                optCard.onclick = () => selectOption(optText);
+
+                optCard.innerHTML = `
+                    <div class="option-prefix">${prefixes[optIdx]}</div>
+                    <div class="option-label">${escapeHtml(optText)}</div>
+                `;
+                container.appendChild(optCard);
+            });
+
+            document.getElementById('btn-prev').disabled = (currentQIndex === 0);
+
+            if (currentQIndex === 24) {
+                document.getElementById('btn-next').style.display = 'none';
+                document.getElementById('btn-submit').style.display = 'inline-flex';
+            } else {
+                document.getElementById('btn-next').style.display = 'inline-flex';
+                document.getElementById('btn-submit').style.display = 'none';
+            }
+
+            updatePaletteStatus();
+        }
+
+        function selectOption(selectedText) {
+            userAnswers[currentQIndex] = selectedText;
+            renderCurrentQuestion();
+        }
+
+        function goToPrevQuestion() {
+            if (currentQIndex > 0) showQuestion(currentQIndex - 1);
+        }
+
+        function goToNextQuestion() {
+            if (currentQIndex < 24) showQuestion(currentQIndex + 1);
+        }
+
+        function jumpToQuestion(idx) {
+            showQuestion(idx);
+        }
+
+        function promptSubmission() {
+            const unansweredCount = userAnswers.filter(a => a === null).length;
+
+            if (unansweredCount > 0) {
+                showModal(
+                    'Unanswered Questions Warning',
+                    `You still have <strong>${unansweredCount} unanswered questions</strong>. Do you want to review them before submitting?`,
+                    'SUBMIT ANYWAY',
+                    'REVIEW QUESTIONS',
+                    () => submitQuizFinal(),
+                    () => {
+                        const firstUnanswered = userAnswers.findIndex(a => a === null);
+                        if (firstUnanswered !== -1) jumpToQuestion(firstUnanswered);
+                    }
+                );
+            } else {
+                showModal(
+                    'Submit Test',
+                    'Are you sure you want to submit your test for evaluation?',
+                    'Yes, Submit Now',
+                    'Cancel',
+                    () => submitQuizFinal()
+                );
+            }
+        }
+
+        function submitQuizFinal() {
+            let correctCount = 0;
+            let wrongCount = 0;
+            let unansweredCount = 0;
+
+            questionsBank.forEach((q, idx) => {
+                const userAns = userAnswers[idx];
+                if (userAns === null) {
+                    unansweredCount++;
+                } else if (userAns === q.answer) {
+                    correctCount++;
+                } else {
+                    wrongCount++;
+                }
+            });
+
+            const totalScore = correctCount;
+            const percentage = Math.round((totalScore / 25) * 100);
+
+            document.getElementById('res-score-num').textContent = `${totalScore} / 25`;
+            document.getElementById('res-score-pct').textContent = `Percentage: ${percentage}%`;
+
+            document.getElementById('res-student-name').textContent = studentDetails.name;
+            document.getElementById('res-student-class').textContent = studentDetails.class;
+            document.getElementById('res-student-roll').textContent = studentDetails.roll;
+
+            document.getElementById('stat-correct-val').textContent = correctCount;
+            document.getElementById('stat-wrong-val').textContent = wrongCount;
+            document.getElementById('stat-unanswered-val').textContent = unansweredCount;
+
+            // Performance message evaluation
+            let perfMsg = "";
+            if (percentage >= 90) {
+                perfMsg = "Outstanding! Masterful understanding of the prose lesson!";
+            } else if (percentage >= 80) {
+                perfMsg = "Excellent work! Strong grasp of story events and vocabulary.";
+            } else if (percentage >= 70) {
+                perfMsg = "Very Good! A little more revision will make your score perfect.";
+            } else if (percentage >= 60) {
+                perfMsg = "Good effort! Review the lesson details and try again.";
+            } else if (percentage >= 50) {
+                perfMsg = "Fair performance. Re-read 'The Night the Ghost Got In' for better clarity.";
+            } else {
+                perfMsg = "Keep practicing. Read the lesson thoroughly and attempt the test again!";
+            }
+            document.getElementById('res-performance-msg').textContent = perfMsg;
+
+            // CSS Donut Chart update
+            const correctDeg = (correctCount / 25) * 360;
+            const wrongDeg = (wrongCount / 25) * 360;
+            const chartElem = document.getElementById('donut-chart');
+            chartElem.style.setProperty('--correct-deg', `${correctDeg}deg`);
+            chartElem.style.setProperty('--wrong-deg', `${wrongDeg}deg`);
+            document.getElementById('donut-pct-text').textContent = `${percentage}%`;
+
+            renderAnswerReviewList();
+            switchScreen('result-screen');
+        }
+
+        function renderAnswerReviewList() {
+            const container = document.getElementById('review-items-container');
+            container.innerHTML = '';
+
+            questionsBank.forEach((q, idx) => {
+                const userAns = userAnswers[idx];
+                let statusClass = 'is-unanswered';
+                let statusBadge = '⚠️ Unanswered';
+
+                if (userAns === q.answer) {
+                    statusClass = 'is-correct';
+                    statusBadge = '✅ Correct (+1)';
+                } else if (userAns !== null) {
+                    statusClass = 'is-wrong';
+                    statusBadge = '❌ Wrong';
+                }
+
+                const itemDiv = document.createElement('div');
+                itemDiv.className = `review-item ${statusClass}`;
+
+                itemDiv.innerHTML = `
+                    <div class="review-header">
+                        <span>Q${idx + 1}. Prose Comprehension</span>
+                        <span>${statusBadge}</span>
+                    </div>
+                    <div class="review-q-text">${q.question}</div>
+                    <div class="review-context">Context: "${q.context}"</div>
+                    <div class="review-answers-grid">
+                        <div class="review-ans-box ${userAns !== q.answer && userAns !== null ? 'user-wrong' : ''}">
+                            <strong>Your Answer:</strong> ${userAns !== null ? escapeHtml(userAns) : '<span style="color:#ea580c">Unanswered</span>'}
+                        </div>
+                        <div class="review-ans-box correct-ans">
+                            <strong>Correct Answer:</strong> ${escapeHtml(q.answer)}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(itemDiv);
+            });
+        }
+
+        function toggleAnswerReview() {
+            const panel = document.getElementById('review-panel');
+            if (panel.style.display === 'none' || panel.style.display === '') {
+                panel.style.display = 'block';
+                panel.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                panel.style.display = 'none';
+            }
+        }
+
+        function resetQuiz() {
+            questionsBank = JSON.parse(JSON.stringify(rawQuestions));
+            questionsBank.forEach(q => shuffleArray(q.options));
+            shuffleArray(questionsBank);
+            questionsBank.forEach((q, idx) => { q.id = idx + 1; });
+
+            userAnswers = new Array(25).fill(null);
+            currentQIndex = 0;
+
+            document.getElementById('student-name').value = studentDetails.name;
+            switchScreen('welcome-screen');
+        }
+
+        function showModal(title, bodyHtml, primaryBtnText, secondaryBtnText, onPrimary, onSecondary) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-body').innerHTML = bodyHtml;
+
+            const priBtn = document.getElementById('modal-btn-pri');
+            const secBtn = document.getElementById('modal-btn-sec');
+
+            priBtn.textContent = primaryBtnText || 'OK';
+            priBtn.onclick = () => {
+                closeModal();
+                if (onPrimary) onPrimary();
+            };
+
+            if (secondaryBtnText) {
+                secBtn.style.display = 'inline-block';
+                secBtn.textContent = secondaryBtnText;
+                secBtn.onclick = () => {
+                    closeModal();
+                    if (onSecondary) onSecondary();
+                };
+            } else {
+                secBtn.style.display = 'none';
+            }
+
+            document.getElementById('quiz-modal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('quiz-modal').classList.remove('active');
+        }
+
+        function shuffleArray(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+    </script>
+</body>
+</html>
